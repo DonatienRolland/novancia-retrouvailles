@@ -17,6 +17,10 @@ gem 'uglifier'
 gem 'webpacker'
 gem 'devise'
 
+gem 'nokogiri'
+gem 'rack', '~> 2.0.1'
+gem 'rspec'
+
 group :development do
   gem 'web-console', '>= 3.3.0'
 end
