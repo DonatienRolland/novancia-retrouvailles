@@ -157,7 +157,7 @@ GEM
     responders (2.4.0)
       actionpack (>= 4.2.0, < 5.3)
       railties (>= 4.2.0, < 5.3)
-<<<<<<< HEAD
+
     rspec (3.7.0)
       rspec-core (~> 3.7.0)
       rspec-expectations (~> 3.7.0)
@@ -171,8 +171,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.7.0)
     rspec-support (3.7.0)
-=======
->>>>>>> ea515e9618f2e1a0067d6e9c5186de437f3144fb
+
     sass (3.5.4)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
