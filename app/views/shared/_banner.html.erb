@@ -1,6 +1,7 @@
 <div class="banner" style="background-image: linear-gradient(-225deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%), url(<%= image_path 'Fond.png' %>);">
+  <%= render 'shared/navbar' %>
   <% @activities.each do |activity| %>
-    <div class="col-xs-12 col-sm-4">
+    <div class="col-xs-12 col-sm-3">
       <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= image_path 'Carré_01.png' %>);">
         <div class="card-description">
           <h2><%= activity.title %></h2>
@@ -10,4 +11,5 @@
       </div>
     </div>
   <% end %>
+  <%= render 'shared/lafabrique' %>
 </div>
