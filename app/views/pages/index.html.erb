@@ -1,0 +1,11 @@
+<% @activities.each do |activity| %>
+  <div class="col-xs-12 col-sm-3">
+    <div class="card" style="background-image: url(<%= image_path 'Carré_01.png' %>);">
+      <div class="card-description">
+        <h2><%= activity.title %></h2>
+        <p><%= activity.descritpion %></p>
+      </div>
+      <button type="button" class="btn btn-danger">Je vote<a class="card-link" href="#" ></a></button>
+    </div>
+  </div>
+<% end %>
