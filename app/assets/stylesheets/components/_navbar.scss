@@ -1,81 +1,47 @@
-/* Main navbar */
-.navbar-wagon {
-  background: rgba(255,255,255,0.07);
-  transition: all 0.3s ease;
-  height: 70px;
-  padding: 0px 30px;
+.navbar {
+  height: 150px;
+  background-size: cover !important;
+  background-position: left;
+  background-repeat: no-repeat;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  margin-bottom: 0;
+  background-color: #FFFEF3;
+}
+.annimation {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  Z-INDEX: 10;
-  position: absolute;
-  top: 0;
+  height: 60%;
+  margin: 10px 20px;
 }
-/* Logo */
-.navbar-wagon-brand img {
-  height: 200px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-/* User Avatar */
-.navbar-wagon .avatar {
-  height: 35px;
-  width: 35px;
+.avatar-large {
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
 }
 
-/* Right section */
-.navbar-wagon-right {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.timer {
+  position: relative;
 }
-
-/* Basic navbar item */
-.navbar-wagon-item {
-  cursor: pointer;
-  padding: 0 20px;
+.timer h1 {
+  font-size: 12px;
+  margin: 0;
+  padding-top: 10px;
 }
-
-/* Navbar link */
-.navbar-wagon-link {
-  color: #616668;
-  font-size: 14px;
-}
-.navbar-wagon-link:hover {
-  color: #da552f;
-  text-decoration: none;
-}
-
-/* Dropdown menu */
-.navbar-wagon-dropdown-menu {
-  margin-top: 15px;
-  box-shadow: 1px 1px 4px #E6E6E6;
-  border-color: #E6E6E6;
-}
-.navbar-wagon-dropdown-menu li > a {
-  transition: color 0.3s ease;
-  font-weight: lighter !important;
-  color: #999999 !important;
-  font-size: 15px !important;
-  line-height: 22px !important;
-  padding: 10px 20px;
-}
-.navbar-wagon-dropdown-menu li > a:hover {
-  background: transparent !important;
-  color: black !important;
-}
-.navbar-wagon-dropdown-menu:before {
-  content: ' ';
-  height: 10px;
-  width: 10px;
+.timer img {
+  height: 100px;
   position: absolute;
-  right: 10px;
-  top: -6px;
-  background-color: white;
-  transform: rotate(45deg);
-  border-left: 1px solid #E6E6E6;
-  border-top: 1px solid #E6E6E6;
+  top: -1px;
+  right: -11px;
 }
+.call-to-action {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  .btn {
+    width: 40%;
+    margin: 0 2px;
+  }
+}
+

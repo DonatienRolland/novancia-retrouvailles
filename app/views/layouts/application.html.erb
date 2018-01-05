@@ -11,16 +11,9 @@
   </head>
   <body>
     <%= render 'shared/flashes' %>
-    <div class="banner" style="background-image: linear-gradient(-225deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%), url(<%= image_path 'Fond.png' %>);">
-      <%= render 'shared/navbar' %>
-      <div class="timer">
-        <h1>TEMPS RESTANT</h1>
-        <%= image_tag "Horloge.png", id: "countdown" %>
-      </div>
+    <%= render 'shared/navbar' %>
       <%= yield %>
-      <%= render 'shared/lafabrique' %>
-    </div>
-
+    <%= render 'shared/footer' %>
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
   </body>

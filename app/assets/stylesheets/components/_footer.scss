@@ -1,0 +1,19 @@
+.footer {
+  height: 165px;
+  background-size: cover !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: flex-end;
+  position:fixed;
+  width: 100%;
+  bottom: 0;
+  z-index:99999;
+}
+.size-btn {
+  height: 40px;
+  padding-bottom: 70px;
+}
