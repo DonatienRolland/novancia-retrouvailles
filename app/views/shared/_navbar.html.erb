@@ -1,19 +1,36 @@
-<div class="navbar">
-  <div class="annimation">
-    <%= cl_image_tag 'forterre_t2lca5', class:"avatar-large" %>
-    <%= cl_image_tag 'plante_s7mwim', height: 50, crop: :fill, id:"magrin-top-plante" %>
-    <div class="timer">
-      <h1>PHOTOS POSTEES</h1>
-      <%= cl_image_tag 'horloge_vyrwy8', id:"countdown" %>
+<div class="navbar-all">
+  <div class="navbar">
+    <div class="col-sm-offset-3 col-sm-6">
+      <div class="annimation">
+        <%= cl_image_tag 'forterre_t2lca5', class:"avatar-large" %>
+        <%= cl_image_tag 'plante_s7mwim', height: 50, crop: :fill, id:"magrin-top-plante" %>
+        <div class="timer">
+          <h1>PHOTOS POSTEES</h1>
+          <%= cl_image_tag 'horloge_vyrwy8', id:"countdown" %>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="call-to-action">
+            <button type="button" class="btn btn-danger">Top</button>
+            <button type="button" class="btn btn-danger">Actu</button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col">
-      <div class="call-to-action">
-        <button type="button" class="btn btn-danger">Top</button>
-        <button type="button" class="btn btn-danger">Actu</button>
+
+  <!-- Right Navigation -->
+  <div class="navbar-wagon-right hidden-xs hidden-sm">
+    <!-- Profile picture with dropdown list -->
+    <div class="navbar-wagon-item">
+      <div class="dropdown">
+        <img src="https://kitt.lewagon.com/placeholder/users/ssaunier" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
+        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Log Out</a></li>
+        </ul>
       </div>
     </div>
   </div>
 </div>
-

@@ -1,6 +1,6 @@
 .footer {
-  height: 165px;
   background-size: cover !important;
+  height: 165px;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
@@ -16,4 +16,7 @@
 .size-btn {
   // height: 40px;
   padding-bottom: 25px;
+}
+.footer-lg{
+  background-color: #FFFEF3;
 }
