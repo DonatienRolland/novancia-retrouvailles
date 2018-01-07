@@ -1,9 +1,8 @@
-
-<div class="footer" style="background-image: url(<%= image_path 'bass.png' %>);">
+<div class="footer" style="background-image: url('<%= cl_image_path 'bass_cyd0ds', crop: :fill %>')">
   <%= link_to root_path, class: "size-btn" do %>
-    <%= image_tag "light.png" %>
+    <%= cl_image_tag "light_pshfmb", height: 40, width: 40, crop: :fill %>
   <% end %>
   <%= link_to root_path, class: "size-btn" do %>
-    <%= image_tag "camera.png" %>
+    <%= cl_image_tag "camera_bsusxt", height: 40, width: 40, crop: :fill %>
   <% end %>
 </div>

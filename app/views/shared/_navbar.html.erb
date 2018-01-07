@@ -1,9 +1,10 @@
 <div class="navbar">
   <div class="annimation">
-    <%= image_tag 'forterre.png', class:"avatar-large" %>
+    <%= cl_image_tag 'forterre_t2lca5', class:"avatar-large" %>
+    <%= cl_image_tag 'plante_s7mwim', height: 50, crop: :fill, id:"magrin-top-plante" %>
     <div class="timer">
       <h1>PHOTOS POSTEES</h1>
-      <%= image_tag 'horloge.png', id:"countdown" %>
+      <%= cl_image_tag 'horloge_vyrwy8', id:"countdown" %>
     </div>
   </div>
   <div class="row">
@@ -12,8 +13,7 @@
         <button type="button" class="btn btn-danger">Top</button>
         <button type="button" class="btn btn-danger">Actu</button>
       </div>
-
     </div>
-
   </div>
 </div>
+

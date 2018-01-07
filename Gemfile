@@ -23,6 +23,7 @@ gem 'rspec'
 
 # Gem adding
 gem 'omniauth-google-oauth2'
+gem 'cloudinary'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
