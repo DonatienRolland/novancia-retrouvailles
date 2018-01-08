@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 0;
-  background-color: #FFFEF3;
+  background-color: #FDFCF2;
   position: relative;
 }
 .annimation {
@@ -13,11 +13,12 @@
   justify-content: space-between;
   height: 60%;
   margin: 10px 20px;
+  position: relative;
 }
 .avatar-large {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  border-radius: 5%;
 }
 
 .timer {
@@ -38,6 +39,8 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  position: relative;
+  z-index: 100;
   .btn {
     width: 40%;
     margin: 0 2px;
@@ -46,6 +49,9 @@
 
 #magrin-top-plante{
   margin-top: 5px;
+  position: absolute;
+  top: -30px;
+  left: 65px;
 }
 
 .navbar-wagon-right {

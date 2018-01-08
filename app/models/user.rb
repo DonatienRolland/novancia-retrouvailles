@@ -1,10 +1,13 @@
 class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
+  has_many :pictures, dependent: :destroy
+  validates :email, presence: true
+  validates :email, uniqueness: true
+
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable,
          :omniauthable, omniauth_providers: [:google_oauth2]
-  has_many :pictures
 
   def self.find_for_google_oauth(auth)
     user_params = auth.slice(:provider, :uid)
