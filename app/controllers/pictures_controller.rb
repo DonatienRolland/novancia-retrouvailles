@@ -2,29 +2,29 @@ class PicturesController < ApplicationController
 
   def index
     @pictures = Picture.all
+    @picture = Picture.new
   end
   def new
     @picture = Picture.new
   end
 
   def create
+
     @picture = Picture.new(picture_params)
-    # @picture.user = current_user
+    @picture.score = 0
+    @picture.user = current_user
     if @picture.save
-      redirect_to @picture, notice: 'Picture was created'
+      redirect_to pictures_path, notice: 'Picture was created'
     else
-      render :new
+      raise
+      render :index
     end
   end
 
   private
 
-  def set_picture
-    @picture = Picture.find(params[:id])
-  end
-
   def picture_params
-    params.require(:picture).permit(:photo)
+    params.require(:picture).permit(:photo, :photo_cache)
   end
 
 end

@@ -3,10 +3,11 @@
     <%= link_to root_path, class: "size-btn" do %>
       <%= cl_image_tag "light_pshfmb", height: 40, width: 40, crop: :fill %>
     <% end %>
-    <%= link_to root_path, class: "size-btn" do %>
-      <%= cl_image_tag "camera_bsusxt", height: 40, width: 40, crop: :fill %>
+    <%= simple_form_for(@picture) do |f| %>
+      <%= f.input :photo, label: false, input_html: { class: "hidden-file-input" }, as: :hidden %>
+      <%= f.input :photo_cache, as: :hidden %>
+      <%= f.submit "Save", class: "btn btn-primary spaceautour" %>
     <% end %>
+    <%= cl_image_tag "camera_bsusxt", height: 40, width: 40, crop: :fill, id:"camera" %>
   <% end %>
 </div>
-
-

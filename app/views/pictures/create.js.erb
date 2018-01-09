@@ -1,3 +1,10 @@
 
 var counter = document.querySelector('#counter')
 counter.innerText = '<%= pluralize @bike.reviews.size, "review" %>'
+
+
+
+document.getElementById("camera").addEventListener("click", function(){
+  console.log("Yeah")
+  document.getElementById("addphoto")
+});
