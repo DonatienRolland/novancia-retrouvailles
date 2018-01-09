@@ -1,8 +1,14 @@
-<div class="navbar-all">
-  <div class="navbar">
+<div class="navbar">
+  <% if user_signed_in? %>
     <div class="col-sm-offset-3 col-sm-6">
       <div class="annimation">
-        <%= cl_image_tag 'forterre_tzg6ef', class:"avatar-large" %>
+        <div class="dropdown">
+          <%= cl_image_tag 'forterre_tzg6ef', class:"avatar-large dropdown-toggle", id:"navbar-wagon-menu",  data: { toggle: "dropdown" }%>
+          <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+            <li><a href="#">Profile</a></li>
+            <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %> </li>
+          </ul>
+        </div>
         <%= cl_image_tag 'plante_s7mwim', height: 50, crop: :fill, id:"magrin-top-plante" %>
         <div class="timer">
           <h1>PHOTOS POSTEES</h1>
@@ -18,19 +24,9 @@
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- Right Navigation -->
-  <div class="navbar-wagon-right hidden-xs hidden-sm">
-    <!-- Profile picture with dropdown list -->
-    <div class="navbar-wagon-item">
-      <div class="dropdown">
-        <img src="https://kitt.lewagon.com/placeholder/users/ssaunier" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
-        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-          <li><a href="#">Profile</a></li>
-          <li><a href="#">Log Out</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
+  <% else %>
+    <!-- Login link (when logged out) -->
+    <h2>Cher Diplomé, veuillez vous identifier</h2>
+    <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
+  <% end %>
 </div>

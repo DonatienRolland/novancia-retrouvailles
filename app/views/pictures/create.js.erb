@@ -1,0 +1,3 @@
+
+var counter = document.querySelector('#counter')
+counter.innerText = '<%= pluralize @bike.reviews.size, "review" %>'
