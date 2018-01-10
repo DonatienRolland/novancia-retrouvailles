@@ -12,7 +12,10 @@
         <%= cl_image_tag 'plante_s7mwim', height: 50, crop: :fill, id:"magrin-top-plante" %>
         <div class="timer">
           <h1>PHOTOS POSTEES</h1>
-          <%= cl_image_tag 'horloge_vyrwy8', id:"countdown" %>
+          <div class="count">
+            <%= cl_image_tag 'horloge_vyrwy8', id:"countdown" %>
+            <%= @pictures.count %>
+          </div>
         </div>
       </div>
       <div class="row">

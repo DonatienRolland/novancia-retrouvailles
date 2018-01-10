@@ -1,7 +1,6 @@
 <div class="banner-home" style="background-image: url('<%= cl_image_path 'fond_uvrhtk', crop: :fill %>')">
   <div class="container">
     <div class="row">
-
       <div class="col-sm-4 col-sm-offset-4">
         <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
           <div class="form-inputs">
@@ -9,7 +8,6 @@
             <%= f.input :password, required: false %>
             <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
           </div>
-
           <div class="form-actions">
             <%= f.button :submit, "Log in" %>
           </div>
@@ -18,7 +16,6 @@
       </div>
     </div>
   </div>
-
 </div>
 
 
