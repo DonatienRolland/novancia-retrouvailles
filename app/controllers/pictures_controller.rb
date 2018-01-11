@@ -1,7 +1,6 @@
 class PicturesController < ApplicationController
-  before_action :authenticate_user!
+  # before_action :authenticate_user!
   before_action :set_picture, only: [ :upvote, :downvote]
-  respond_to :js, :json, :html
 
   def index
     @pictures = Picture.all.order(:created_at => :desc)
