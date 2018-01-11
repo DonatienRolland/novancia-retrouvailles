@@ -33,7 +33,6 @@ GEM
       activemodel (= 5.1.4)
       activesupport (= 5.1.4)
       arel (~> 8.0)
-    activerecord-reputation-system (3.0.1)
     activesupport (5.1.4)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (~> 0.7)
@@ -248,7 +247,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activerecord-reputation-system
   acts_as_votable
   autoprefixer-rails
   bootstrap-sass
