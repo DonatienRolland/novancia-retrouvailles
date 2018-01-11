@@ -4,7 +4,7 @@
     <div class="row">
     <div class="tab-content">
       <div class="tab-pane active" id="actu" role="tabpanel" aria-labelledby="pills-home-tab">
-        <% @pictures.reverse_each do |picture| %>
+        <% @pictures.each do |picture| %>
           <div class="col-xs-12 col-sm-6">
             <div class="cards">
               <div class="body-photo">
@@ -12,8 +12,14 @@
                   <input type="hidden" name="post[category_ids][]" value="">
                   <img src='https://kitt.lewagon.com/placeholder/users/krokrob' class="avatar-bordered"/>
                   <div class="vote" id="counter">
-                    <%= picture.score %>
-                    <%= image_tag 'graduation.svg', height: 30%>
+                    <%= link_to like_picture_path(picture), id:"like-btn", method: :put, remote: :true do %>
+                        <span class="fa fa-arrow-up" aria-hidden="true"></span>
+                        <span class="likes-count"><%= picture.get_upvotes.size %></span>
+                    <% end %>
+                    <%= link_to unlike_picture_path(picture), class:"unlike", method: :put do %>
+                        <span class="fa fa-arrow-down" aria-hidden="true"></span>
+                        <span class=""><%= picture.get_downvotes.size %></span>
+                    <% end %>
                   </div>
                 </div>
                 <%= cl_image_tag picture.photo, class:"photo", crop: :fill %>
@@ -23,7 +29,7 @@
         <% end %>
       </div>
       <div class="tab-pane" id="top" role="tabpanel" aria-labelledby="pills-profile-tab">
-        <% @pictures.each do |picture| %>
+        <% @picturesup.each do |picture| %>
           <div class="col-xs-12 col-sm-6">
             <div class="cards">
               <div class="body-photo">
@@ -31,8 +37,14 @@
                   <input type="hidden" name="post[category_ids][]" value="">
                   <img src='https://kitt.lewagon.com/placeholder/users/krokrob' class="avatar-bordered"/>
                   <div class="vote" id="counter">
-                    <%= picture.score %>
-                    <%= image_tag 'graduation.svg', height: 30%>
+                    <%= link_to like_picture_path(picture), class:"like", method: :put do %>
+                        <span class="fa fa-arrow-up" aria-hidden="true"></span>
+                        <span class=""><%= picture.get_upvotes.size %></span>
+                    <% end %>
+                    <%= link_to unlike_picture_path(picture), class:"unlike", method: :put do %>
+                        <span class="fa fa-arrow-down" aria-hidden="true"></span>
+                        <span class=""><%= picture.get_downvotes.size %></span>
+                    <% end %>
                   </div>
                 </div>
                 <%= cl_image_tag picture.photo, class:"photo", crop: :fill %>

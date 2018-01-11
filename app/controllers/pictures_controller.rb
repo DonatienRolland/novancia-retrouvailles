@@ -1,7 +1,11 @@
 class PicturesController < ApplicationController
+  before_action :authenticate_user!
+  before_action :set_picture, only: [ :upvote, :downvote]
+  respond_to :js, :json, :html
 
   def index
-    @pictures = Picture.all
+    @pictures = Picture.all.order(:created_at => :desc)
+    @picturesup = Picture.all.order(:cached_votes_score => :desc)
     @picture = Picture.new
   end
 
@@ -21,16 +25,25 @@ class PicturesController < ApplicationController
     end
   end
 
+  # upvote_from user
+  # downvote_from user
+
   def upvote
-    @picture = Picture.find(params[:id])
-    if current_user.voted_for? @picture
-      current_user.unvote_for @picture
-    else
-      current_user.up_votes @picture
-    end
+    @picture.upvote_from current_user
+    redirect_to pictures_path
   end
 
+  def downvote
+    @picture.downvote_from current_user
+    redirect_to pictures_path
+  end
+
+
   private
+
+  def set_picture
+    @picture = Picture.find(params[:id])
+  end
 
   def picture_params
     params.require(:picture).permit(:photo, :photo_cache)

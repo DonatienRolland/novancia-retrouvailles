@@ -3,9 +3,11 @@ Rails.application.routes.draw do
   root to: 'pictures#index'
   # root to: 'pages#home'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  resources :pictures, only: [:index, :show, :new, :create] do
+  resources :pictures do
     member do
-      post :upvote
+
+      put "like" => "pictures#upvote"
+      put "unlike" => "pictures#downvote"
+    end
   end
-end
 end
