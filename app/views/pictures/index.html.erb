@@ -2,23 +2,47 @@
 <div class="banner" style="background-image: url('<%= cl_image_path 'fond_uvrhtk', crop: :fill %>')">
   <div class="all-photos">
     <div class="row">
-      <% @pictures.each do |picture| %>
-        <div class="col-xs-12 col-sm-6">
-          <div class="cards">
-            <div class="body-photo">
-              <div class="name-vote">
-                <input type="hidden" name="post[category_ids][]" value="">
-                <img src='https://kitt.lewagon.com/placeholder/users/krokrob' class="avatar-bordered"/>
-                <div class="vote" id="counter">
-                  <%= picture.score %>
-                  <button type="button" class="btn-icon"><%= image_tag 'graduation.svg', height: 30%></button>
+    <div class="tab-content">
+      <div class="tab-pane active" id="actu" role="tabpanel" aria-labelledby="pills-home-tab">
+        <% @pictures.reverse_each do |picture| %>
+          <div class="col-xs-12 col-sm-6">
+            <div class="cards">
+              <div class="body-photo">
+                <div class="name-vote">
+                  <input type="hidden" name="post[category_ids][]" value="">
+                  <img src='https://kitt.lewagon.com/placeholder/users/krokrob' class="avatar-bordered"/>
+                  <div class="vote" id="counter">
+                    <%= picture.score %>
+                    <%= image_tag 'graduation.svg', height: 30%>
+                  </div>
                 </div>
+                <%= cl_image_tag picture.photo, class:"photo", crop: :fill %>
               </div>
-              <%= cl_image_tag picture.photo, class:"photo", crop: :fill %>
             </div>
           </div>
-        </div>
-      <% end %>
+        <% end %>
+      </div>
+      <div class="tab-pane" id="top" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <% @pictures.each do |picture| %>
+          <div class="col-xs-12 col-sm-6">
+            <div class="cards">
+              <div class="body-photo">
+                <div class="name-vote">
+                  <input type="hidden" name="post[category_ids][]" value="">
+                  <img src='https://kitt.lewagon.com/placeholder/users/krokrob' class="avatar-bordered"/>
+                  <div class="vote" id="counter">
+                    <%= picture.score %>
+                    <%= image_tag 'graduation.svg', height: 30%>
+                  </div>
+                </div>
+                <%= cl_image_tag picture.photo, class:"photo", crop: :fill %>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+
     </div>
   </div>
 </div>
