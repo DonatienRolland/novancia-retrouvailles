@@ -12,7 +12,5 @@
 //= require bootstrap-sprockets
 //= require_tree .
 
-
-
-
-@import "../components/camera";
+import "bootstrap";
+import "../components/camera";
