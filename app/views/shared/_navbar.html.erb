@@ -3,7 +3,7 @@
     <div class="col-sm-offset-3 col-sm-6">
       <div class="annimation">
         <div class="dropdown">
-          <%= cl_image_tag 'forterre_tzg6ef', class:"avatar-large dropdown-toggle", id:"navbar-wagon-menu", "data-toggle" => "dropdown" %>
+          <%= cl_image_tag 'forterre_tzg6ef', class: "avatar-large dropdown-toggle", id:"navbar-wagon-menu", "data-toggle" => "dropdown" %>
           <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
             <li><a href="#">Profile</a></li>
             <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %> </li>
@@ -39,3 +39,5 @@
     <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
   <% end %>
 </div>
+
+

@@ -12,7 +12,7 @@
                   <input type="hidden" name="post[category_ids][]" value="">
                   <img src='https://kitt.lewagon.com/placeholder/users/krokrob' class="avatar-bordered"/>
                   <div class="vote" id="counter">
-                    <%= link_to like_picture_path(picture), id:"like-btn", method: :put, remote: :true do %>
+                    <%= link_to like_picture_path(picture), id:"like-btn", method: :put do %>
                         <span class="fa fa-arrow-up" aria-hidden="true"></span>
                         <span class="likes-count"><%= picture.get_upvotes.size %></span>
                     <% end %>
