@@ -11,11 +11,11 @@
         </div>
         <%= cl_image_tag 'plante_s7mwim', height: 50, crop: :fill, id:"magrin-top-plante" %>
         <div class="timer">
-          <h1>PHOTOS POSTEES</h1>
-          <div class="count">
-            <%= cl_image_tag 'horloge_vyrwy8', id:"countdown" %>
-            <%= @pictures.count %>
+          <div class="timer-desc">
+            <h1>PHOTOS POSTEES</h1>
+            <p><%= @pictures.count %></p>
           </div>
+          <%= cl_image_tag 'horloge_vyrwy8', id:"countdown" %>
         </div>
       </div>
       <div class="row">
@@ -23,10 +23,10 @@
           <div class="call-to-action">
             <ul class="nav nav-pills" role="tablist">
               <li class="active", role="presentation">
-                <a data-toggle="tab" href="#top" role="tab" aria-controls="top" class="btn-danger">Top</a>
+                <a data-toggle="tab" href="#actu" role="tab" aria-controls="actu" class="btn-danger">Actu</a>
               </li>
               <li role="presentation">
-                <a data-toggle="tab" href="#actu" role="tab" aria-controls="actu" class="btn-danger">Actu</a>
+                <a data-toggle="tab" href="#top" role="tab" aria-controls="top" class="btn-danger">Top</a>
               </li>
             </ul>
           </div>

@@ -12,7 +12,7 @@
 .all-photos {
   overflow-y : scroll;
   -webkit-overflow-scrolling: touch;
-  height: calc(100vh - 200px);
+  height: 100%;
   width: 90%;
 }
 

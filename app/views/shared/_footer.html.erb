@@ -1,15 +1,39 @@
-<div class="footer" style="background-image: url('<%= cl_image_path 'basgd_rxyz9y', crop: :fill %>')">
+<!-- small ecran -->
+<div class="footer height-sn hidden-sm  hidden-md hidden-lg" style="background-image: url('<%= cl_image_path 'logobasiphone-01_yyhhha', crop: :fill %>')">
   <% if user_signed_in? %>
-    <%= link_to root_path, class: "size-btn" do %>
-      <%= cl_image_tag "light_pshfmb", height: 40, width: 40, crop: :fill %>
-    <% end %>
-    <div class="add-picture">
-      <%= simple_form_for @picture, html: { id: :myForm } do |f| %>
-        <%= f.input :photo , label: false, input_html: { class: "hidden-file-input", id:"add-photo" } %>
-        <%= f.input :photo_cache, as: :hidden %>
-        <%= f.submit "Save", class: "btn btn-primary spaceautour", type: "hidden", id:"theSubmitButton" %>
+    <div class="action-footer margin-actionners-sn">
+      <%= link_to root_path do %>
+        <%= cl_image_tag "light_pshfmb", height: 40, width: 40, crop: :fill %>
       <% end %>
-      <%= cl_image_tag "camera_bsusxt", height: 40, width: 40, crop: :fill, id:"camera" %>
+      <div class="add-picture">
+        <%= simple_form_for @picture, html: { id: :myForm } do |f| %>
+          <%= f.input :photo , label: false, input_html: { class: "hidden-file-input", id:"add-photo" } %>
+          <%= f.input :photo_cache, as: :hidden %>
+          <%= f.submit "Save", class: "btn btn-primary spaceautour", type: "hidden", id:"theSubmitButton" %>
+        <% end %>
+        <%= cl_image_tag "camera_bsusxt", height: 40, width: 40, crop: :fill, id:"camera" %>
+      </div>
     </div>
   <% end %>
 </div>
+
+
+<!-- large ecran -->
+<div class="footer height-lg hidden-xs" style="background-image: url('<%= cl_image_path 'bass_cyd0ds', crop: :fill %>')">
+  <% if user_signed_in? %>
+    <div class="action-footer margin-actionners-lg">
+      <%= link_to root_path do %>
+        <%= cl_image_tag "light_pshfmb", height: 40, width: 40, crop: :fill %>
+      <% end %>
+      <div class="add-picture">
+        <%= simple_form_for @picture, html: { id: :myForm } do |f| %>
+          <%= f.input :photo , label: false, input_html: { class: "hidden-file-input", id:"add-photo" } %>
+          <%= f.input :photo_cache, as: :hidden %>
+          <%= f.submit "Save", class: "btn btn-primary spaceautour", type: "hidden", id:"theSubmitButton" %>
+        <% end %>
+        <%= cl_image_tag "camera_bsusxt", height: 40, width: 40, crop: :fill, id:"camera" %>
+      </div>
+    </div>
+  <% end %>
+</div>
+
