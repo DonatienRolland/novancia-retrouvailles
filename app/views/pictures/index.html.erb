@@ -1,60 +1,117 @@
 <%= render 'shared/navbar' %>
-<div class="banner-sn" style="background-image: url('<%= cl_image_path 'fond_uvrhtk', crop: :fill %>')">
+<!-- small screen -->
+<div class="banner-sn hidden-sm  hidden-md hidden-lg" style="background-image: url('<%= cl_image_path 'fond_uvrhtk', crop: :fill %>')">
   <div class="all-photos">
     <div class="row">
     <div class="tab-content">
       <div class="tab-pane active" id="actu" role="tabpanel" aria-labelledby="pills-home-tab">
         <% @pictures.each do |picture| %>
-          <div class="col-xs-12 col-sm-6">
-            <div class="cards">
-              <div class="body-photo">
-                <div class="name-vote">
-                  <input type="hidden" name="post[category_ids][]" value="">
-                  <img src='https://kitt.lewagon.com/placeholder/users/krokrob' class="avatar-bordered"/>
-                  <div class="vote" id="counter">
-                    <%= link_to like_picture_path(picture), id:"like-btn", method: :put do %>
-                        <span class="fa fa-arrow-up" aria-hidden="true"></span>
-                        <span class="likes-count"><%= picture.get_upvotes.size %></span>
-                    <% end %>
-                    <%= link_to unlike_picture_path(picture), class:"unlike", method: :put do %>
-                        <span class="fa fa-arrow-down" aria-hidden="true"></span>
-                        <span class=""><%= picture.get_downvotes.size %></span>
-                    <% end %>
-                  </div>
-                </div>
-                <%= cl_image_tag picture.photo, class:"photo", crop: :fill %>
+          <div class="cards">
+            <img src='https://kitt.lewagon.com/placeholder/users/krokrob' class="avatar-bordered"/>
+            <%= cl_image_tag picture.photo, class:"photo", crop: :fill %>
+            <div class="name-vote">
+              <div class="date-creation">
+                <p><%= picture.created_at.strftime("%F") %> ago</p>
+              </div>
+              <div class="vote" id="counter">
+                <%= link_to like_picture_path(picture), id:"like-btn", method: :put do %>
+                  <span class="fa fa-arrow-up" aria-hidden="true"></span>
+                  <span class="likes-count"><%= picture.get_upvotes.size %></span>
+                <% end %>
+                <%= link_to unlike_picture_path(picture), class:"unlike", method: :put do %>
+                  <span class="fa fa-arrow-down" aria-hidden="true"></span>
+                  <span class=""><%= picture.get_downvotes.size %></span>
+                <% end %>
               </div>
             </div>
           </div>
         <% end %>
+        <div class="espace"><h1>Kiss</h1></div>
       </div>
       <div class="tab-pane" id="top" role="tabpanel" aria-labelledby="pills-profile-tab">
         <% @picturesup.each do |picture| %>
-          <div class="col-xs-12 col-sm-6">
-            <div class="cards">
-              <div class="body-photo">
-                <div class="name-vote">
-                  <input type="hidden" name="post[category_ids][]" value="">
-                  <img src='https://kitt.lewagon.com/placeholder/users/krokrob' class="avatar-bordered"/>
-                  <div class="vote" id="counter">
-                    <%= link_to like_picture_path(picture), class:"like", method: :put do %>
-                        <span class="fa fa-arrow-up" aria-hidden="true"></span>
-                        <span class=""><%= picture.get_upvotes.size %></span>
-                    <% end %>
-                    <%= link_to unlike_picture_path(picture), class:"unlike", method: :put do %>
-                        <span class="fa fa-arrow-down" aria-hidden="true"></span>
-                        <span class=""><%= picture.get_downvotes.size %></span>
-                    <% end %>
-                  </div>
-                </div>
-                <%= cl_image_tag picture.photo, class:"photo", crop: :fill %>
+          <div class="cards">
+            <img src='https://kitt.lewagon.com/placeholder/users/krokrob' class="avatar-bordered"/>
+            <%= cl_image_tag picture.photo, class:"photo", crop: :fill %>
+            <div class="name-vote">
+              <div class="date-creation">
+                <p><%= picture.created_at.strftime("%F") %> ago</p>
+              </div>
+              <div class="vote" id="counter">
+                <%= link_to like_picture_path(picture), id:"like-btn", method: :put do %>
+                  <span class="fa fa-arrow-up" aria-hidden="true"></span>
+                  <span class="likes-count"><%= picture.get_upvotes.size %></span>
+                <% end %>
+                <%= link_to unlike_picture_path(picture), class:"unlike", method: :put do %>
+                  <span class="fa fa-arrow-down" aria-hidden="true"></span>
+                  <span class=""><%= picture.get_downvotes.size %></span>
+                <% end %>
               </div>
             </div>
           </div>
         <% end %>
+        <div class="espace"><h1>Kiss</h1></div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- large screen -->
+<div class="banner-lg hidden-xs" style="background-image: url('<%= cl_image_path 'fond_uvrhtk', crop: :fill %>')">
+  <div class="all-photos-lg">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4">
+
+    <div class="tab-content">
+      <div class="tab-pane active" id="actu" role="tabpanel" aria-labelledby="pills-home-tab">
+        <% @pictures.each do |picture| %>
+          <div class="cards-lg">
+            <img src='https://kitt.lewagon.com/placeholder/users/krokrob' class="avatar-bordered"/>
+            <%= cl_image_tag picture.photo, class:"photo", crop: :fill %>
+            <div class="name-vote">
+              <div class="date-creation">
+                <p><%= picture.created_at.strftime("%F") %> ago</p>
+              </div>
+              <div class="vote" id="counter">
+                <%= link_to like_picture_path(picture), id:"like-btn", method: :put do %>
+                  <span class="fa fa-arrow-up" aria-hidden="true"></span>
+                  <span class="likes-count"><%= picture.get_upvotes.size %></span>
+                <% end %>
+                <%= link_to unlike_picture_path(picture), class:"unlike", method: :put do %>
+                  <span class="fa fa-arrow-down" aria-hidden="true"></span>
+                  <span class=""><%= picture.get_downvotes.size %></span>
+                <% end %>
+              </div>
+            </div>
+          </div>
+        <% end %>
+        <div class="espace"><h1>Kiss</h1></div>
+      </div>
+      <div class="tab-pane" id="top" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <% @picturesup.each do |picture| %>
+          <div class="cards">
+            <div class="name-vote">
+              <img src='https://kitt.lewagon.com/placeholder/users/krokrob' class="avatar-bordered"/>
+              <div class="vote" id="counter">
+                <%= link_to like_picture_path(picture), class:"like", method: :put do %>
+                    <span class="fa fa-arrow-up" aria-hidden="true"></span>
+                    <span class=""><%= picture.get_upvotes.size %></span>
+                <% end %>
+                <%= link_to unlike_picture_path(picture), class:"unlike", method: :put do %>
+                    <span class="fa fa-arrow-down" aria-hidden="true"></span>
+                    <span class=""><%= picture.get_downvotes.size %></span>
+                <% end %>
+              </div>
+            </div>
+            <%= cl_image_tag picture.photo, class:"photo", crop: :fill %>
+          </div>
+        <% end %>
+        <div class="espace"><h1>Kiss</h1></div>
       </div>
     </div>
 
+      </div>
     </div>
   </div>
 </div>

@@ -5,48 +5,57 @@
 .cards {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  margin-top: 15px;
+  width: 320px;
+  margin: auto;
 }
-
 .all-photos {
   overflow-y : scroll;
   -webkit-overflow-scrolling: touch;
   height: 100%;
   width: 320px;
 }
-
 .avatar-bordered {
   width: 30px;
   height: 30px;
   border-radius: 50%;
   box-shadow: 0 1px 2px rgba(0,0,0,0.2);
-  border: white 1px solid;
+  margin-bottom: 5px;
+  margin-left: 88%;
 }
 .name-vote {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   color: black;
-  margin-bottom: 5px;
+  margin-bottom: 30px;
   padding: 0 5px;
   align-items: center;
 }
 .vote {
   height: 30px;
 }
-// .all-photos:first-child {
-//   margin-top: 100px;
-// }
+
 
 .btn-icon {
   color: red;
   background-color: none;
 }
 .espace {
-  height: 50px;
+  height: 40px;
 }
 
 .hidden-file-input {
   opacity: 0;
+}
+
+.all-photos-lg{
+  height: 100%;
+  width: 80%;
+  margin: auto;
+}
+.cards-lg {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  margin: auto;
 }

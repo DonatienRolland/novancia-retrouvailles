@@ -6,6 +6,8 @@ class PicturesController < ApplicationController
     @pictures = Picture.all.order(:created_at => :desc)
     @picturesup = Picture.all.order(:cached_votes_score => :desc)
     @picture = Picture.new
+
+    # @time = (picture.created_at.strftime("%e/%m/%y") - DateTime.now.to_date.strftime("%e/%m/%y"))
   end
 
   def new
