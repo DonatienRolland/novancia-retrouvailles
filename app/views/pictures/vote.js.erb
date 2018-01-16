@@ -1,7 +1,9 @@
-// var newVote = document.get.getElementById('like-btn')
-// <% if current_user.liked? @picture %>
-//   $('.like-btn').addClass('liked');
-// <% else %>
-//   $('.like-btn').addClass('like-btn');
-// <% end %>
-// $('.likes-count').html("<%= @picture.get_upvotes.size %>")
+function refreshCounter() {
+  console.log('tutu')
+  const counters = document.querySelectorAll("[data-counter-id='<%= @picture.id%>']");
+  counters.forEach((counter) => {
+    counter.outerHTML = '<%= j render "pictures/counter", picture: @picture %>'
+  })
+}
+
+refreshCounter();

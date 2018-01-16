@@ -1,12 +1,12 @@
 <!-- small ecran -->
-<div class="footer height-sn hidden-sm  hidden-md hidden-lg" style="background-image: url('<%= cl_image_path 'logobasiphone-01_yyhhha', crop: :fill %>')">
+<div class="footer height-sn hidden-sm  hidden-md hidden-lg" style="background-image: url('<%= cl_image_path 'Basiphone_z6hyfq', crop: :fill %>')">
   <% if user_signed_in? %>
     <div class="action-footer margin-actionners-sn">
       <%= link_to root_path do %>
         <%= cl_image_tag "light_pshfmb", height: 40, width: 40, crop: :fill %>
       <% end %>
       <div class="add-picture">
-        <%= simple_form_for @picture, html: { id: :myForm } do |f| %>
+        <%= simple_form_for @picture, html: { id: :myForm }, remote: true, authenticity_token: true do |f| %>
           <%= f.input :photo , label: false, input_html: { class: "hidden-file-input", id:"add-photo" } %>
           <%= f.input :photo_cache, as: :hidden %>
           <%= f.submit "Save", class: "btn btn-primary spaceautour", type: "hidden", id:"theSubmitButton" %>

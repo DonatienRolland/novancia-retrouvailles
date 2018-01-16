@@ -19,7 +19,11 @@ class PicturesController < ApplicationController
     @picture.score = 0
     @picture.user = current_user
     if @picture.save
-      redirect_to pictures_path, notice: 'Picture was created'
+      respond_to do |format|
+        format.html { redirect_to pictures_path }
+        format.js { render "pictures/create" }
+      end
+
     else
       flash.now[:alerte] = "Could not save client"
       render :index
@@ -31,12 +35,20 @@ class PicturesController < ApplicationController
 
   def upvote
     @picture.upvote_from current_user
-    redirect_to pictures_path
+
+    respond_to do |format|
+      format.html { redirect_to pictures_path }
+      format.js { render "pictures/vote" }
+    end
   end
 
   def downvote
     @picture.downvote_from current_user
-    redirect_to pictures_path
+
+    respond_to do |format|
+      format.html { redirect_to pictures_path }
+      format.js { render "pictures/vote" }
+    end
   end
 
 

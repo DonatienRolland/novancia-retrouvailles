@@ -13,3 +13,25 @@
 @import "layouts/index";
 @import "components/index";
 @import "pages/index";
+
+
+
+@media (orientation: landscape) {
+  body {
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    height: 100vw;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+  .banner-sn {
+    height: calc(100vw - 210px);
+  }
+}

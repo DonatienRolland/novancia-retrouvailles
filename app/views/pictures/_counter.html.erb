@@ -1,0 +1,10 @@
+<div class="vote" data-counter-id="<%= picture.id %>">
+  <%= link_to like_picture_path(picture), id:"like-btn", method: :put, remote: true do %>
+    <span class="fa fa-arrow-up" aria-hidden="true"></span>
+    <span class="likes-count"><%= picture.get_upvotes.size %></span>
+  <% end %>
+  <%= link_to unlike_picture_path(picture), class:"unlike", method: :put, remote: true do %>
+    <span class="fa fa-arrow-down" aria-hidden="true"></span>
+    <span class="unlikes-count"><%= picture.get_downvotes.size %></span>
+  <% end %>
+</div>

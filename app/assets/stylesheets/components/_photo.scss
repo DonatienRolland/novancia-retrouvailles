@@ -20,7 +20,7 @@
   border-radius: 50%;
   box-shadow: 0 1px 2px rgba(0,0,0,0.2);
   margin-bottom: 5px;
-  margin-left: 88%;
+  margin-left: 5px;
 }
 .name-vote {
   display: flex;
@@ -33,29 +33,31 @@
 }
 .vote {
   height: 30px;
+  text-decoration: none;
 }
 
-
-.btn-icon {
-  color: red;
-  background-color: none;
-}
 .espace {
-  height: 40px;
+  height: 10px;
 }
 
 .hidden-file-input {
   opacity: 0;
 }
 
-.all-photos-lg{
-  height: 100%;
-  width: 80%;
-  margin: auto;
-}
-.cards-lg {
+.user-posted {
   display: flex;
-  flex-direction: column;
-  height: 200px;
-  margin: auto;
+  flex-direction: row;
+  justify-content: flex-end;
+  p {
+    font-weight: lighter;
+  }
+}
+.fa {
+  color: #37474f;
+}
+.likes-count {
+  color: #37474f;
+}
+.unlikes-count {
+  color: #37474f;
 }

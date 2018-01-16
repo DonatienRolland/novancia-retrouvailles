@@ -4,6 +4,9 @@ class User < ApplicationRecord
   has_many :pictures, dependent: :destroy
   validates :email, presence: true
   validates :email, uniqueness: true
+  validates :first_name, presence: true
+
+  mount_uploader :photo, PhotoUploader
 
   acts_as_voter
 

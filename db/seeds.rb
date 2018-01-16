@@ -2,11 +2,10 @@ puts 'destroying all activities and users'
 Picture.destroy_all
 User.destroy_all
 
-donatien = User.create!(first_name: "donatien", email: "donatien@hotmail.fr", password: "password")
-erwan = User.create!(first_name: "erwan", email: "erwan@hotmail.fr", password: "password")
-dorian = User.create!(first_name: "dorian", email: "dorian@hotmail.fr", password: "password")
+donatien = User.create!(first_name: "donatien", email: "donatien@hotmail.fr", password: "password", photo: "http://res.cloudinary.com/dbhmjj2co/image/upload/v1516102781/Donatien_tzhjk2.png")
+erwan = User.create!(first_name: "erwan", email: "erwan.guillou@mail.novancia.fr", password: "password", photo: "http://res.cloudinary.com/dbhmjj2co/image/upload/v1516102781/Erwan_fytqg2.png")
+dorian = User.create!(first_name: "dorian", email: "dorian.gentine@mail.novancia.fr", password: "password", photo: "http://res.cloudinary.com/dbhmjj2co/image/upload/v1516102781/Dorian_whf8ur.png")
 
-# donatien.remote_avatar_url = "http://res.cloudinary.com/dbhmjj2co/image/upload/v1515419873/Donatien_yfklfo.png"
 
 puts "Users are created"
 

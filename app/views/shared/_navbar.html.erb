@@ -3,7 +3,7 @@
     <div class="col-sm-offset-3 col-sm-6">
       <div class="annimation">
         <div class="dropdown">
-          <%= cl_image_tag 'forterre_tzg6ef', class: "avatar-large dropdown-toggle", id:"navbar-wagon-menu", "data-toggle" => "dropdown" %>
+          <%= cl_image_tag 'forterre_tzg6ef', class: "avatar-large dropdown-toggle", id:"navbar-wagon-menu", data: { toggle: "dropdown" } %>
           <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
             <li><a href="#">Profile</a></li>
             <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %> </li>
@@ -23,10 +23,10 @@
           <div class="call-to-action">
             <ul class="nav nav-pills" role="tablist">
               <li class="active", role="presentation">
-                <a data-toggle="tab" href="#actu" role="tab" aria-controls="actu" class="btn-danger">Actu</a>
+                <a data-toggle="tab" href="#actu" role="tab" aria-controls="actu" class="btn-danger height-nav-btn">Actu</a>
               </li>
               <li role="presentation">
-                <a data-toggle="tab" href="#top" role="tab" aria-controls="top" class="btn-danger">Top</a>
+                <a data-toggle="tab" href="#top" role="tab" aria-controls="top" class="btn-danger height-nav-btn">Top</a>
               </li>
             </ul>
           </div>

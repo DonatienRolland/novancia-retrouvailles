@@ -1,0 +1,29 @@
+.all-photos-lg{
+  overflow-y : scroll;
+  height: 100%;
+  width: 80%;
+  margin: auto;
+}
+
+
+.photo-lg {
+
+  height: 250px;
+
+}
+
+.cards-lg {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.name-vote-lg {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: black;
+  margin-bottom: 30px;
+  padding: 0 5px;
+  align-items: center;
+}

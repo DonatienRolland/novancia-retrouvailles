@@ -59,15 +59,22 @@
 .active {
   text-decoration: underline;
 }
+.height-btn {
+  margin-top: 300px;
+  height: 40px;
+  padding-top: 5px;
+}
 .btn-danger {
-  height: 100%;
-  padding: 0;
-  margin: 0;
   width: 100px;
   text-align: center;
   a {
     padding-bottom: 10px;
   }
+}
+.height-nav-btn {
+  height: 35px;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
 }
   // .btn-danger:hover{
   //   background-color: #EC5A54 !important;
@@ -83,7 +90,7 @@
   margin-top: 5px;
   position: absolute;
   top: -30px;
-  left: 65px;
+  left: -11px;
 }
 .navbar-wagon-dropdown-menu {
   margin-top: 15px;
