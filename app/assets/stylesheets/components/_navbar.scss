@@ -23,26 +23,35 @@
   border-radius: 5%;
 }
 
-.timer {
-  position: relative;
-}
-.timer h1 {
-  font-size: 12px;
-  margin: 0;
-  padding-top: 10px;
-}
 .timer-desc {
-  z-index: 10;
-}
-.timer p {
-  color: white;
-}
-.timer img {
-  height: 100px;
   position: absolute;
-  top: -1px;
-  right: -11px;
+  top: 0;
+  right: 12px;
+  z-index: 10;
+  h1 {
+    font-size: 12px;
+    margin: 0;
+    padding-top: 10px;
+  }
+  p {
+    margin-top: 5px;
+    margin-right: 6px;
+    text-align: right;
+    color: white;
+  }
 }
+#horloge{
+  position: absolute;
+  top: 21px;
+  right:0;
+}
+
+// .timer img {
+//   height: 100px;
+//   position: absolute;
+//   top: -1px;
+//   right: -11px;
+// }
 .call-to-action {
   position: relative;
   z-index: 100;

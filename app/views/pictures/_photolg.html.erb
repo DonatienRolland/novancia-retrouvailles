@@ -1,22 +1,20 @@
-<div class="row">
-  <div class="col-xs-12 col-sm-4">
-    <div class="cards-lg">
-      <img src='https://kitt.lewagon.com/placeholder/users/krokrob' class="avatar-bordered"/>
-      <%= cl_image_tag picture.photo, class:"photo-lg", :crop=>"fit" %>
-      <div class="name-vote-lg">
-        <div class="date-creation-lg">
-          <p><%= picture.created_at.strftime("%F") %> ago</p>
+<div class="col-xs-12 col-sm-3">
+  <div class="cards-lg">
+    <%= cl_image_tag picture.photo, class:"photo", :crop=>"scale", :gravity=>"face" %>
+    <div class="content-lg">
+      <div class="user-posted">
+        <p><%= picture.user.first_name.capitalize %></p>
+        <% if picture.user.photo %>
+          <%= cl_image_tag picture.user.photo, class:"avatar-bordered" %>
+        <% else %>
+          <%= cl_image_tag picture.user.split(//).first.upcase, class:"avatar-bordered gris-avatar" %>
+        <% end %>
+      </div>
+      <div class="name-vote">
+        <div class="date-creation">
+          <p><%= time_ago_in_words(picture.created_at) %></p>
         </div>
-        <div class="vote" id="counter">
-          <%= link_to like_picture_path(picture), id:"like-btn", method: :put do %>
-            <span class="fa fa-arrow-up" aria-hidden="true"></span>
-            <span class="likes-count"><%= picture.get_upvotes.size %></span>
-          <% end %>
-          <%= link_to unlike_picture_path(picture), class:"unlike", method: :put do %>
-            <span class="fa fa-arrow-down" aria-hidden="true"></span>
-            <span class=""><%= picture.get_downvotes.size %></span>
-          <% end %>
-        </div>
+        <%= render "pictures/counter", picture: picture %>
       </div>
     </div>
   </div>
