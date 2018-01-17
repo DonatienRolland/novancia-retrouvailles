@@ -1,14 +1,17 @@
 class PicturesController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_picture, only: [ :upvote, :downvote]
+  before_action :set_picture, only: [ :upvote, :downvote, :time]
 
   def index
     @pictures = Picture.all.order(:created_at => :desc)
     @picturesup = Picture.all.order(:cached_votes_score => :desc)
+
     @picture = Picture.new
 
-    # @time = (picture.created_at.strftime("%e/%m/%y") - DateTime.now.to_date.strftime("%e/%m/%y"))
+    # picture = Picture.find(params[:id])
+    # @time = ((Time.now - picture.created_at) / 86400).truncate
   end
+
 
   def new
     @picture = Picture.new

@@ -22,6 +22,9 @@
   margin-bottom: 5px;
   margin-left: 5px;
 }
+.gris-avatar{
+  background-color: #c1d5e0;
+}
 .name-vote {
   display: flex;
   flex-direction: row;
@@ -33,7 +36,6 @@
 }
 .vote {
   height: 30px;
-  text-decoration: none;
 }
 
 .espace {
@@ -42,6 +44,8 @@
 
 .hidden-file-input {
   opacity: 0;
+  font-size: 1px;
+  width: 2px;
 }
 
 .user-posted {
