@@ -11,7 +11,6 @@
 import "bootstrap";
 import "../components/camera";
 import { likeUnlike } from "../components/like";
-import "../components/alert";
 import "../components/dropdown";
 
 

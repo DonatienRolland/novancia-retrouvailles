@@ -24,6 +24,11 @@
 }
 .gris-avatar{
   background-color: #c1d5e0;
+  p {
+    color: white;
+    margin-top: 2px;
+    margin-left: 2px;
+  }
 }
 .name-vote {
   display: flex;
@@ -56,6 +61,7 @@
     font-weight: lighter;
   }
 }
+
 .fa {
   color: #37474f;
 }

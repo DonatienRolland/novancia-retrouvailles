@@ -1,21 +1,5 @@
 <div class="col-xs-12 col-sm-3">
   <div class="cards-lg">
     <%= cl_image_tag picture.photo, class:"photo", :crop=>"scale", :gravity=>"face" %>
-    <div class="content-lg">
-      <div class="user-posted">
-        <p><%= picture.user.first_name&.capitalize %></p>
-        <% if picture.user.photo %>
-          <%= cl_image_tag picture.user.photo, class:"avatar-bordered" %>
-        <% else %>
-          <%= cl_image_tag picture.user.split(//).first.upcase, class:"avatar-bordered gris-avatar" %>
-        <% end %>
-      </div>
-      <div class="name-vote">
-        <div class="date-creation">
-          <p><%= time_ago_in_words(picture.created_at) %></p>
-        </div>
-        <%= render "pictures/counter", picture: picture %>
-      </div>
-    </div>
   </div>
 </div>

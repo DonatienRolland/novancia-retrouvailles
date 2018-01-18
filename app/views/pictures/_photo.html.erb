@@ -1,10 +1,12 @@
 <div class="cards">
   <div class="user-posted">
     <p><%= picture.user.first_name&.capitalize %></p>
-    <% if picture.user.photo %>
-      <%= cl_image_tag picture.user.photo.url, class:"avatar-bordered" %>
+    <% if picture.user.photo.present? %>
+      <%= cl_image_tag picture.user.photo.url(:bright_face), class:"avatar-bordered" %>
     <% else %>
-      <%= cl_image_tag picture.user.split(//).first.upcase, class:"avatar-bordered gris-avatar" %>
+      <div class="avatar-bordered gris-avatar">
+        <p><%= picture.user.first_name.split(//).first.upcase %></p>
+      </div>
     <% end %>
   </div>
   <%= cl_image_tag picture.photo, class:"photo", :crop=>"scale", :gravity=>"face" %>

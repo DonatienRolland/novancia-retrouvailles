@@ -5,6 +5,7 @@ class User < ApplicationRecord
   validates :email, presence: true
   validates :email, uniqueness: true
   validates :first_name, presence: true
+  # validates :photo, presence: true
 
   mount_uploader :photo, PhotoUploader
 

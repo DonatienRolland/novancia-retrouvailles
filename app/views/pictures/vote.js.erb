@@ -1,5 +1,4 @@
 function refreshCounter() {
-  console.log('tutu')
   const counters = document.querySelectorAll("[data-counter-id='<%= @picture.id%>']");
   counters.forEach((counter) => {
     counter.outerHTML = '<%= j render "pictures/counter", picture: @picture %>'

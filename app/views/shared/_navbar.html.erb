@@ -5,8 +5,12 @@
         <div class="dropdown">
           <%= cl_image_tag 'forterre_tzg6ef', class: "avatar-large dropdown-toggle", id:"navbar-wagon-menu", data: { toggle: "dropdown" } %>
           <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-            <li><a href="#">Profile</a></li>
-            <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %> </li>
+            <!-- <li><a href="#">Profile</a></li> -->
+            <li>
+              <%= link_to destroy_user_session_path, method: :delete do %>
+                <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Log out") %>
+              <% end %>
+            </li>
           </ul>
         </div>
         <%= cl_image_tag 'plante_s7mwim', height: 50, crop: :fill, id:"magrin-top-plante" %>
