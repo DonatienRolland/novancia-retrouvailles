@@ -3,7 +3,7 @@
     <%= cl_image_tag picture.photo, class:"photo", :crop=>"scale", :gravity=>"face" %>
     <div class="content-lg">
       <div class="user-posted">
-        <p><%= picture.user.first_name.capitalize %></p>
+        <p><%= picture.user.first_name&.capitalize %></p>
         <% if picture.user.photo %>
           <%= cl_image_tag picture.user.photo, class:"avatar-bordered" %>
         <% else %>

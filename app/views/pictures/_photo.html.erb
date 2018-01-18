@@ -1,8 +1,8 @@
 <div class="cards">
   <div class="user-posted">
-    <p><%= picture.user.first_name.capitalize %></p>
+    <p><%= picture.user.first_name&.capitalize %></p>
     <% if picture.user.photo %>
-      <%= cl_image_tag picture.user.photo, class:"avatar-bordered" %>
+      <%= cl_image_tag picture.user.photo.url, class:"avatar-bordered" %>
     <% else %>
       <%= cl_image_tag picture.user.split(//).first.upcase, class:"avatar-bordered gris-avatar" %>
     <% end %>

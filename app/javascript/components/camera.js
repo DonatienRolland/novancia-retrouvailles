@@ -1,12 +1,17 @@
 const addphoto = document.getElementById("add-photo");
-// addphoto.type = "file";
+const camera = document.querySelector("#camera");
 
-document.getElementById("camera").addEventListener("click", function(){
-  console.log('titi')
-  addphoto.click();
-});
+if (camera) {
+  camera.addEventListener("click", function(){
+    console.log('titi')
+    addphoto.click();
+  });
+}
 
-document.getElementById("add-photo").onchange = function (){
-  document.getElementById('myForm').submit();
-};
+if (addphoto) {
+  addphoto.onchange = function (){
+    document.getElementById('myForm').submit();
+  };
+}
+
 
