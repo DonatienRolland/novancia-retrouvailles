@@ -1,0 +1,53 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 25%;
+  color: white;
+}
+.home-link {
+  background-color: $red;
+  color: white;
+  width: 30%;
+  height: 35px;
+  border-radius: 2px;
+  margin: auto;
+  text-align: center;
+  font-size: 19px;
+  margin-top: 10%;
+  padding-top: 2px;
+}
+.home-link:hover {
+  color: white;
+}
+.form-actions {
+  margin: auto;
+  .home-link {
+    margin-top: 0px;
+  }
+}
+.sign-up {
+  margin-top: 15%;
+}
+.add-photo-profil {
+  position: relative;
+}
+#add-profil {
+  background-color: $red;
+  color: white;
+  width: 0%;
+}
+#cameraprofil {
+  position: absolute;
+  top: 7px;
+  left: 142px;
+}
+.ecarter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .form-actions {
+    margin: 0 !important;
+    width: 40px !important;
+  }
+}

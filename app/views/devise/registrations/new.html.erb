@@ -1,21 +1,29 @@
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-
+<div class="banner-home" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= cl_image_path 'fond_uvrhtk', crop: :fill %>')">
+  <div class="col-xs-12 col-sm-4">
+    <div class="home sign-up">
       <h2>Sign up</h2>
 
       <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
         <%= f.error_notification %>
 
         <div class="form-inputs">
-          <%= f.input :first_name , placeholder:"Prénom: Damien"%>
-          <%= f.input :email, required: true, autofocus: true , placeholder:"email: damien.forterre@gmail.com"%>
-          <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length), placeholder:"mdp: chute on ne le dit pas" %>
-          <%= f.input :password_confirmation, required: true, placeholder:"mdp: tkt lui non plus"%>
-          <%= f.file_field :photo %>
+          <%= f.input :first_name, placeholder:"Prénom: Damien", label: false %>
+          <%= f.input :email, required: true, autofocus: true , placeholder:"email: damien.forterre@gmail.com", label: false %>
+          <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length), placeholder:"chute on ne le dit pas" %>
+          <%= f.input :password_confirmation, required: true, placeholder:"tkt lui non plus"%>
+          <div class="add-photo-profil">
+            <%= f.input :photo, :label => "Photo", input_html: { id:"add-profil" } %>
+            <%= cl_image_tag "photo-camera_cf0zwj", height: 40, width: 40, crop: :fill, id:"cameraprofil" %>
+            <%= f.input :photo_cache, as: :hidden %>
+          </div>
         </div>
-        <div class="form-actions">
-          <%= f.button :submit, "Sign up" %>
+        <div class="ecarter">
+          <div class="form-actions">
+            <%= f.button :submit, "Sign up", class:"home-link" %>
+          </div>
+          <%= link_to root_path, class: "" do %>
+          <p>back</p>
+          <% end %>
         </div>
       <% end %>
     </div>
