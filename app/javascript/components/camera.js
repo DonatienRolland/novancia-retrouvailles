@@ -1,5 +1,5 @@
 const addphoto = document.getElementById("add-photo");
-const camera = document.querySelector("#camera");
+const camera = document.querySelector(".camera");
 
 if (camera) {
   camera.addEventListener("click", function(){

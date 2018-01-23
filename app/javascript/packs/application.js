@@ -13,6 +13,8 @@ import "../components/camera";
 import "../components/profil";
 import { likeUnlike } from "../components/like";
 import "../components/dropdown";
+import "../components/tab";
+import "../components/lightbox";
 
 
 likeUnlike();

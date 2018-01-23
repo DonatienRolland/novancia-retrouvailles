@@ -1,5 +1,6 @@
 <!-- small ecran -->
-<div class="footer height-sn hidden-sm  hidden-md hidden-lg" style="background-image: url('<%= cl_image_path 'Basiphone_z6hyfq', crop: :fill %>')">
+<div class="footer height-sn hidden-sm  hidden-md hidden-lg">
+  <br><hr class="hr">
   <% if user_signed_in? %>
     <div class="action-footer margin-actionners-sn">
       <%= link_to root_path do %>
@@ -31,7 +32,7 @@
           <%= f.input :photo_cache, as: :hidden %>
           <%= f.submit "Save", class: "btn btn-primary spaceautour", type: "hidden", id:"theSubmitButton" %>
         <% end %>
-        <%= cl_image_tag "camera_bsusxt", height: 40, width: 40, crop: :fill, id:"camera" %>
+        <%= cl_image_tag "camera_bsusxt", height: 40, width: 40, crop: :fill, class:"camera" %>
       </div>
     </div>
   <% end %>

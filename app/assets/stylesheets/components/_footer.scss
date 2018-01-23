@@ -14,8 +14,12 @@
   bottom: -50px;
 }
 .height-sn {
-  height: 140px;
+  height: 75px;
   bottom: -10px;
+  background-color: $bachapp;
+  position: relative;
+  padding:0;
+  top: 0;
 }
 
 
@@ -43,4 +47,13 @@
   margin-bottom: 20px;
   padding-left: 20px;
   width: 400px;
+}
+
+.hr{
+  border-top: 3px solid $red;
+  border-radius: 5px;
+  width: 90%;
+  position: absolute;
+  top: -26px;
+  left: 15px;
 }
