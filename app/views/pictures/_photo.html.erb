@@ -9,7 +9,7 @@
       </div>
     <% end %>
   </div>
-  <%= cl_image_tag picture.photo, class:"photo", :format => :jpg, :height=>240, :crop=>"mpad"%>
+  <%= cl_image_tag picture.photo, class:"photo", :format => :jpg, :height=>240, :crop=>"lpad"%>
   <div class="name-vote">
     <div class="date-creation">
       <p><%= time_ago_in_words(picture.created_at) %></p>
