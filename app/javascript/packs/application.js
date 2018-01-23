@@ -15,6 +15,7 @@ import { likeUnlike } from "../components/like";
 import "../components/dropdown";
 import "../components/tab";
 import "../components/lightbox";
+import "../components/loading";
 
 
 likeUnlike();

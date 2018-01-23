@@ -7,9 +7,6 @@ class PicturesController < ApplicationController
     @picturesup = Picture.all.order(:cached_votes_score => :desc)
 
     @picture = Picture.new
-
-    # picture = Picture.find(params[:id])
-    # @time = ((Time.now - picture.created_at) / 86400).truncate
   end
 
 
@@ -29,13 +26,11 @@ class PicturesController < ApplicationController
       end
 
     else
-      flash.now[:alerte] = "Could not save client"
+      flash.now[:alerte] = "Could not save pricture"
       render :index
     end
   end
 
-  # upvote_from user
-  # downvote_from user
 
   def upvote
     @picture.upvote_from current_user
