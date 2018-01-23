@@ -20,6 +20,7 @@ class PicturesController < ApplicationController
     @picture.score = 0
     @picture.user = current_user
     if @picture.save
+      binding.pry
       respond_to do |format|
         format.html { redirect_to pictures_path }
         format.js { render "pictures/create" }

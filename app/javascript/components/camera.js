@@ -10,7 +10,7 @@ if (camera) {
 
 if (addphoto) {
   addphoto.onchange = function (){
-    document.querySelector('.myForm').submit();
+    document.querySelector('.theSubmitButton').click();
   };
 }
 

@@ -12,10 +12,10 @@
         <% end %>
       </div>
       <div class="add-picture">
-        <%= simple_form_for @picture, html: { class: :myForm }, remote: true, authenticity_token: true do |f| %>
+        <%= simple_form_for @picture, html: { class: "myForm marginform"}, remote: true, authenticity_token: true do |f| %>
           <%= f.input :photo , label: false, input_html: { class: "hidden-file-input", id:"add-photo" } %>
           <%= f.input :photo_cache, as: :hidden %>
-          <%= f.submit "Save", class: "btn btn-primary spaceautour", type: "hidden", id:"theSubmitButton" %>
+          <%= f.submit "Save", class: "btn btn-primary spaceautour theSubmitButton" %>
         <% end %>
         <%= cl_image_tag "camera_bsusxt", height: 30, width: 30, crop: :fill, class:"camera" %>
       </div>
@@ -32,10 +32,10 @@
         <%= cl_image_tag "light_pshfmb", height: 40, width: 40, crop: :fill %>
       <% end %>
       <div class="add-picture">
-        <%= simple_form_for @picture, html: { class: :myForm } do |f| %>
+        <%= simple_form_for @picture, html: { class: "myForm marginform" }, remote: true do |f| %>
           <%= f.input :photo , label: false, input_html: { class: "hidden-file-input", id:"add-photo" } %>
           <%= f.input :photo_cache, as: :hidden %>
-          <%= f.submit "Save", class: "btn btn-primary spaceautour", type: "hidden", id:"theSubmitButton" %>
+          <%= f.submit "Save", class: "btn btn-primary spaceautour theSubmitButton" %>
         <% end %>
         <%= cl_image_tag "camera_bsusxt", height: 40, width: 40, crop: :fill, class:"camera" %>
       </div>
