@@ -2,14 +2,14 @@
   <div class="user-posted">
     <p><%= picture.user.first_name&.capitalize %></p>
     <% if picture.user.photo.present? %>
-      <%= cl_image_tag picture.user.photo.url(:bright_face), class:"avatar-bordered" %>
+      <%= cl_image_tag picture.user.photo.url(:bright_face), class:"avatar-bordered", :format => :jpg%>
     <% else %>
       <div class="avatar-bordered gris-avatar">
         <p><%= picture.user.first_name.split(//).first.upcase %></p>
       </div>
     <% end %>
   </div>
-  <%= cl_image_tag picture.photo, class:"photo", :crop=>"scale", :gravity=>"face" %>
+  <%= cl_image_tag picture.photo, class:"photo", :format => :jpg, :height=>240, :crop=>"mpad"%>
   <div class="name-vote">
     <div class="date-creation">
       <p><%= time_ago_in_words(picture.created_at) %></p>

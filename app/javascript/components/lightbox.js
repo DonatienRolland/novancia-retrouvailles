@@ -1,5 +1,4 @@
 var vignettes = document.getElementsByClassName("lightbox");
-console.log(vignettes)
 for (var i=0; i<vignettes.length; i++){
   vignettes[i].addEventListener('click', function(e){
     e.preventDefault();
@@ -10,7 +9,6 @@ for (var i=0; i<vignettes.length; i++){
 function lightbox(lien){
   var imageGrand = new Image(),
   lightbox = document.getElementById('lightbox');
-  console.log(lightbox)
   imageGrand.addEventListener('load', function(){
     lightbox.innerHTML = "";
     lightbox.appendChild(imageGrand);
