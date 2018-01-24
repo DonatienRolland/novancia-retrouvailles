@@ -1,4 +1,5 @@
 const addphoto = document.getElementById("add-photo");
+console.log(addphoto)
 const camera = document.querySelector(".camera");
 
 if (camera) {
@@ -10,7 +11,7 @@ if (camera) {
 
 if (addphoto) {
   addphoto.onchange = function (){
-    document.querySelector('.theSubmitButton').click();
+    document.getElementById('theSubmitButton').click();
   };
 }
 
