@@ -9,4 +9,5 @@ Rails.application.routes.draw do
       put "unlike" => "pictures#downvote"
     end
   end
+  get 'sitemap.xml', to: 'pages#sitemap'
 end
