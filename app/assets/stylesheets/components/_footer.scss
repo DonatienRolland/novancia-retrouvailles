@@ -18,12 +18,12 @@
   bottom: 0px;
 }
 
-.add-picture {
+#add-picture {
   width: 25px;
   height: 25px;
   position: absolute;
   top: -22px;
-  right: 28px;
+  right: -28px;
 }
 .spaceautour{
   height: 0;
@@ -37,7 +37,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 50%;
+  width: 100%;
 }
 .action-footer {
   width: 400px;
@@ -52,6 +52,7 @@
   margin-bottom: 10px;
   margin-top: 10px;
   padding-left: 20px;
+  padding-right: 20px;
   width: 400px;
 }
 
@@ -61,5 +62,5 @@
   width: 90%;
   position: absolute;
   top: -26px;
-  left: 15px;
+  align-items: center;
 }

@@ -1,0 +1,5 @@
+<%= simple_form_for @picture, html: { class: "myForm marginform", id:"add-picture"}, remote: true, authenticity_token: true do |f| %>
+  <%= f.input :photo , label: false, input_html: { class: "hidden-file-input", id:"add-photo" } %>
+  <%= f.input :photo_cache, as: :hidden %>
+  <%= f.submit "Save", class: "btn btn-primary spaceautour", id:"theSubmitButton" %>
+<% end %>
