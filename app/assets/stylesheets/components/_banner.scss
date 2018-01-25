@@ -38,3 +38,11 @@
   margin-bottom: 30px;
 }
 
+.banner-avem {
+  height: 100vh;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  overflow: scroll;
+  flex-direction: column;
+  justify-content: center;
+}

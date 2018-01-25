@@ -1,0 +1,66 @@
+.avem-contenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: calc(100vh - 360px);
+}
+.avem-title{
+  text-align: center;
+  height: 100px;
+}
+.bloc-rightandleft {
+  margin: auto 0;
+  text-align: center;
+  width: 175px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(255,255,255,0.5);
+  padding: 20px;
+}
+.avem-contact {
+  p {
+    font-size: 14px;
+  }
+}
+.avem-height-sn {
+  height: calc(100vh - 145px) !important;
+}
+.avem-job {
+  h3 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+.avem-gif {
+  img {
+    height: 100%;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
+.avem-services {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.bloc-service {
+  width: 200px;
+  background-color: rgba(255,255,255,1);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  p {
+    font-size: 14px;
+    text-align: center;
+  }
+  img {
+    margin-bottom: 10px;
+  }
+}

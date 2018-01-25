@@ -1,0 +1,20 @@
+<div class="footer height-sn ">
+  <hr class="hr">
+  <% if user_signed_in? %>
+    <div class="action-footer margin-actionners-sn">
+      <div class="action-footer-deux">
+        <%= link_to pictures_path do %>
+          <%= cl_image_tag "exit_nlbrhw", height: 30, width: 30 %>
+        <% end %>
+        <a href="mailto:dorian@avemcreation.com">
+          <%= cl_image_tag "mail_vgdpnk", height: 30, width: 30, crop: :fill%>
+        </a>
+        <a href="tel:+33786019941">
+          <%= cl_image_tag "phone-call_dijo27", height: 30, width: 30, crop: :fill %>
+        </a>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+

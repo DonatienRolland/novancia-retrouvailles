@@ -1,0 +1,77 @@
+<div id="load">
+  <div id="contents">
+
+    <!-- large screen -->
+    <div class="banner-avem " style="background-image: url('<%= cl_image_path 'fond_uvrhtk', crop: :fill %>')">
+
+      <div class="avem-title">
+        <h1>AVEM Creation</h1>
+      </div>
+
+      <div class="avem-contenu hidden-xs">
+
+        <div class="avem-contact bloc-rightandleft">
+          <%= cl_image_tag 'phone-call_dijo27' %>
+          <p> 07.86.01.99.41</p>
+          <%= cl_image_tag 'mail_vgdpnk' %>
+          <p>dorian@avemcreation.com</p>
+          <%= cl_image_tag 'dove_yd2bwv' %>
+          <p>Le piegeon voyageur reste toujours le moyen le plus écolo</p>
+        </div>
+
+        <div class="avem-gif">
+          <%= cl_image_tag 'avemteam_fnfu0v' %>
+        </div>
+
+        <div class="avem-job bloc-rightandleft">
+          <div class="Dorian">
+            <h3>Dorian Gentine</h3>
+            <p>Developper Front End</p>
+          </div>
+          <div class="Erwan">
+            <h3>Erwan Guillou</h3>
+            <p>Web Designer</p>
+          </div>
+          <div class="Donatien">
+            <h3>Donatien Rolland</h3>
+            <p>Developper Back End</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="avem-contenu avem-height-sn hidden-md hidden-lg avem-gif">
+        <%= cl_image_tag 'avemteam_fnfu0v' %>
+      </div>
+
+
+      <div class="avem-services">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4">
+            <div class="branding bloc-service">
+              <%= cl_image_tag 'artistic-brush_ubayn3' %>
+              <p> La branche de la linguistique qui se préoccupe plus spécifiquement des corpus s'appelle logiquement la linguistique de corpus.</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <div class="site-web bloc-service">
+              <%= cl_image_tag 'monitor_fzaax2' %>
+              <p> La branche de la linguistique qui se préoccupe plus spécifiquement des corpus s'appelle logiquement la linguistique de corpus.</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <div class="mobile bloc-service">
+              <%= cl_image_tag 'smartphone_odojud' %>
+              <p> La branche de la linguistique qui se préoccupe plus spécifiquement des corpus s'appelle logiquement la linguistique de corpus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hidden-md hidden-lg">
+        <%= render 'shared/footeravem' %>
+      </div>
+    </div>
+
+  </div>
+</div>
+
