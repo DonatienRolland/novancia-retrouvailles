@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   end
   get 'sitemap.xml', to: 'pages#sitemap'
   get 'avemteam', to: 'pages#avemteam'
+  get 'trucdemaladeAVEMCREATION', to: 'pages#trucdemaladeAVEMCREATION'
 end
