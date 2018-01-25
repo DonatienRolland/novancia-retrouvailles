@@ -32,6 +32,7 @@
 .add-photo-profil {
   position: relative;
 }
+
 #add-profil {
   background-color: $red;
   color: white;
@@ -42,6 +43,15 @@
   top: 7px;
   left: 142px;
 }
+.links-to-connect{
+  margin-top: 20px;
+  .color-links{
+    color: white;
+  }
+}
+.connectwidth {
+  width: 188px !important;
+}
 .ecarter {
   display: flex;
   flex-direction: row;
@@ -50,7 +60,7 @@
     margin: 0 !important;
     width: 40px !important;
     .home-link {
-      width: 80px;
+      width: 170px !important;
     }
   }
 }

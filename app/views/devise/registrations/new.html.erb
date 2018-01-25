@@ -12,14 +12,14 @@
           <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length), placeholder:"chute on ne le dit pas" %>
           <%= f.input :password_confirmation, required: true, placeholder:"tkt lui non plus"%>
           <div class="add-photo-profil">
-            <%= f.input :photo, :label => "Photo", input_html: { id:"add-profil" } %>
+            <%= f.input :photo, :label => "Ajoute ta photo :", input_html: { id:"add-profil" } %>
             <%= cl_image_tag "photo-camera_cf0zwj", height: 40, width: 40, crop: :fill, id:"cameraprofil" %>
             <%= f.input :photo_cache, as: :hidden %>
           </div>
         </div>
         <div class="ecarter">
           <div class="form-actions">
-            <%= f.button :submit, "Sign up", class:"home-link" %>
+            <%= f.button :submit, "Coucou, je m'enregistre", class:"home-link" %>
           </div>
           <%= link_to root_path, class: "" do %>
           <p>back</p>
