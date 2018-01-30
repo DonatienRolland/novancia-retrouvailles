@@ -12,4 +12,8 @@ Rails.application.routes.draw do
   get 'sitemap.xml', to: 'pages#sitemap'
   get 'avemteam', to: 'pages#avemteam'
   get 'trucdemaladeAVEMCREATION', to: 'pages#trucdemaladeAVEMCREATION'
+
+  post 'password/forgot', to: 'password#forgot'
+  post 'password/reset', to: 'password#reset'
+
 end
