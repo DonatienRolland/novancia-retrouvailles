@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height: calc(100vh - 360px);
 }
 .avem-title{
   text-align: center;
@@ -25,7 +24,9 @@
     font-size: 14px;
   }
 }
-
+.row {
+  margin: 0 !important;
+}
 .avem-job {
   h3 {
     font-size: 25px;
@@ -49,6 +50,9 @@
   display: flex;
   margin-top: 20px;
   margin-bottom: 20px;
+  h3 {
+    font-size: 25px;
+  }
 }
 
 .bloc-service {
