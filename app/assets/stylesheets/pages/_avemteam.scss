@@ -6,7 +6,11 @@
 }
 .avem-title{
   text-align: center;
-  height: 100px;
+  height: 115px;
+  img {
+    height: 70px;
+    margin-top: 20px;
+  }
 }
 .bloc-rightandleft {
   margin: auto 0;
@@ -21,9 +25,7 @@
     font-size: 14px;
   }
 }
-.avem-height-sn {
-  height: calc(100vh - 145px) !important;
-}
+
 .avem-job {
   h3 {
     font-size: 25px;
@@ -34,7 +36,7 @@
 }
 .avem-gif {
   img {
-    height: 100%;
+    height: 210px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
     align-items: center;
     margin: 0 auto;
@@ -50,13 +52,17 @@
 }
 
 .bloc-service {
-  width: 200px;
-  background-color: rgba(255,255,255,1);
+  width: 80%;
+  background-color: #fcf8e39e;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
   padding: 10px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   p {
     font-size: 14px;
     text-align: center;
@@ -72,4 +78,7 @@
 }
 .marginservices {
   margin-bottom: 20px;
+}
+.espace {
+  height: 30px;
 }
