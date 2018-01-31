@@ -9,7 +9,7 @@
         <div class="form-inputs">
           <%= f.input :first_name, placeholder:"Prénom: Damien", label: false %>
           <%= f.input :email, required: true, autofocus: true , placeholder:"email: damien.forterre@gmail.com", label: false %>
-          <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length), placeholder:"chute on ne le dit pas" %>
+          <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length), placeholder:"chut on ne le dit pas" %>
           <%= f.input :password_confirmation, required: true, placeholder:"tkt lui non plus"%>
           <div class="add-photo-profil">
             <%= f.input :photo, :label => "Ajoute ta photo :", input_html: { id:"add-profil" } %>
