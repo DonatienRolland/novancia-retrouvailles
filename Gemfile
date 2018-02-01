@@ -27,6 +27,9 @@ gem 'cloudinary'
 gem 'carrierwave', '~> 1.2'
 gem 'acts_as_votable'
 
+gem 'sweet-alert'
+gem 'sweet-alert-confirm'
+
 group :development do
   gem 'web-console', '>= 3.3.0'
 end
