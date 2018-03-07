@@ -27,21 +27,11 @@
     <!-- large screen -->
     <div class="banner-lg hidden-xs" style="background-image: url('<%= cl_image_path 'background_ordinateur_r7np6e', crop: :fill %>')">
       <div class="all-photos-lg">
-        <!-- <div class="tab-content">
-          <div class="tab-pane active" id="actu" role="tabpanel" aria-labelledby="pills-home-tab">
-            <% @pictures.each do |picture| %>
-              <%= render 'pictures/photolg', picture: picture %>
-            <% end %>
-            <div id="lightbox"></div>
-          </div>
-          <div class="tab-pane" id="top" role="tabpanel" aria-labelledby="pills-profile-tab">
-            <% @picturesup.each do |picture| %>
-              <%= render 'pictures/photolg', picture: picture %>
-            <% end %>
 
-          </div>
-        </div> -->
-        <h1 id="invalide-ordi">Ce site n'est pas encore disponible en format ordinateur! Sorry ...</h1>
+
+              <%= cl_image_tag @pictures.first.photo, class:"photo", :crop=>"scale", :gravity=>"face" %>
+
+
       </div>
     </div>
     <%= render 'shared/footer' %>
