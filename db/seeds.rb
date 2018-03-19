@@ -12,8 +12,10 @@ puts "Users are created"
 pitcure1 = Picture.new( score: 121)
 pitcure2 = Picture.new( score: 10)
 
-pitcure1.remote_photo_url = "http://res.cloudinary.com/dbhmjj2co/image/upload/v1515419399/city-street-typography-design_rrzkom.jpg"
-pitcure2.remote_photo_url = "http://res.cloudinary.com/dbhmjj2co/image/upload/v1511522245/dnij7e10pnuy4aybwznq.jpg"
+
+pitcure1.remote_photo_url = "http://res.cloudinary.com/dbhmjj2co/image/upload/v1517609152/c5uq8bdqhewe43cemuww.jpg"
+pitcure2.remote_photo_url = "http://res.cloudinary.com/dbhmjj2co/image/upload/v1517610897/relq9mpperpivhx5vncc.jpg"
+
 
 pitcure1.user = donatien
 pitcure2.user = erwan
