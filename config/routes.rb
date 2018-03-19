@@ -4,12 +4,13 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   resources :pictures do
     member do
-
       put "like" => "pictures#upvote"
       put "unlike" => "pictures#downvote"
     end
   end
+
   get 'sitemap.xml', to: 'pages#sitemap'
+
   get 'avemteam', to: 'pages#avemteam'
   get 'trucdemaladeAVEMCREATION', to: 'pages#trucdemaladeAVEMCREATION'
 
