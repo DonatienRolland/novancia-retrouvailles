@@ -15,15 +15,6 @@ ActiveRecord::Schema.define(version: 20180130131018) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "activities", force: :cascade do |t|
-    t.string "title"
-    t.text "descritpion"
-    t.integer "nb_vote"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "image"
-  end
-
   create_table "groupes", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
