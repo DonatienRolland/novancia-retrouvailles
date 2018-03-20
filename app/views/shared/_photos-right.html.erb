@@ -1,0 +1,9 @@
+<div id="photoRightPart">
+  <div id="whiteLive">
+    <div id="blackLive">
+      <div id="voyantLive"></div>
+      <div id="fluxLive">flux live</div>
+    </div>
+  </div>
+  <%= cl_image_tag @random_image.photo, id:"currentImage", :crop=>"scale", :gravity=>"face" %>
+</div>

@@ -29,7 +29,10 @@
       <div id="all-photos-lg" class="all-photos-lg">
 
 
-              <%= cl_image_tag @random_image.photo, class:"photo", id:"currentImage", onclick:"changePicture()", :crop=>"scale", :gravity=>"face" %>
+        <%= render 'shared/photos-right' %>
+
+        <%= render 'shared/photos-left' %>
+
 
       </div>
     </div>
