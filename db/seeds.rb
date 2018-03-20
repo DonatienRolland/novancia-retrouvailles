@@ -9,8 +9,6 @@ dorian = User.create!(first_name: "dorian", email: "dorian.gentine@mail.novancia
 
 puts "Users are created"
 
-pitcure1 = Picture.new( score: 121)
-pitcure2 = Picture.new( score: 10)
 
 
 pitcure1.remote_photo_url = "http://res.cloudinary.com/dbhmjj2co/image/upload/v1517609152/c5uq8bdqhewe43cemuww.jpg"
