@@ -16,6 +16,7 @@ import "../components/dropdown";
 import "../components/tab";
 import "../components/lightbox";
 import "../components/loading";
+import { Refresh } from "../components/refresh";
 
-
+Refresh();
 likeUnlike();

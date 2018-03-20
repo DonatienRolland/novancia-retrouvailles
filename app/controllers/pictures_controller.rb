@@ -6,6 +6,9 @@ class PicturesController < ApplicationController
     @pictures = Picture.all.order(:created_at => :desc)
     @picturesup = Picture.all.order(:cached_votes_score => :desc)
 
+      @random_no = rand(@pictures.count)
+      @random_image = @pictures[@random_no]
+
     @picture = Picture.new
   end
 

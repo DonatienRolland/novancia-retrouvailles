@@ -26,11 +26,10 @@
 
     <!-- large screen -->
     <div class="banner-lg hidden-xs" style="background-image: url('<%= cl_image_path 'background_ordinateur_r7np6e', crop: :fill %>')">
-      <div class="all-photos-lg">
+      <div id="all-photos-lg" class="all-photos-lg">
 
 
-              <%= cl_image_tag @pictures.first.photo, class:"photo", :crop=>"scale", :gravity=>"face" %>
-
+              <%= cl_image_tag @random_image.photo, class:"photo", id:"currentImage", onclick:"changePicture()", :crop=>"scale", :gravity=>"face" %>
 
       </div>
     </div>
