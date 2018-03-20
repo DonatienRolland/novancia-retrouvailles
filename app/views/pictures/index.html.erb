@@ -2,25 +2,26 @@
 <div id="load">
   <div id="contents">
 
-    <%= render 'shared/navbar' %>
+    <div id="header-nov">
+      <%= render 'shared/redbanner' %>
+      <%= render 'shared/pagetitle' %>
+    </div>
     <!-- small screen -->
-    <div class="banner-sn hidden-sm  hidden-md hidden-lg" style="background-image: url('<%= cl_image_path 'fond_uvrhtk', crop: :fill %>')">
-      <div class="all-photos">
-        <div class="tab-content">
-          <div class="tab-pane active" id="actu" role="tabpanel" aria-labelledby="pills-home-tab">
-            <% @pictures.each do |picture| %>
-              <%= render 'pictures/photo', picture: picture %>
-            <% end %>
-            <!-- <div class="espace"><h1>Kiss</h1></div> -->
-          </div>
-          <div class="tab-pane" id="top" role="tabpanel" aria-labelledby="pills-profile-tab">
-            <% @picturesup.each do |picture| %>
-              <%= render 'pictures/photo', picture: picture %>
-            <% end %>
-            <!-- <div class="espace"><h1>Kiss</h1></div> -->
-          </div>
-          <div class="espace"></div>
+    <div class="all-photos">
+      <div class="tab-content">
+        <div class="tab-pane active" id="actu" role="tabpanel" aria-labelledby="pills-home-tab">
+          <% @pictures.each do |picture| %>
+            <%= render 'pictures/photo', picture: picture %>
+          <% end %>
+          <!-- <div class="espace"><h1>Kiss</h1></div> -->
         </div>
+        <div class="tab-pane" id="top" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <% @picturesup.each do |picture| %>
+            <%= render 'pictures/photo', picture: picture %>
+          <% end %>
+          <!-- <div class="espace"><h1>Kiss</h1></div> -->
+        </div>
+        <div class="espace"></div>
       </div>
     </div>
 

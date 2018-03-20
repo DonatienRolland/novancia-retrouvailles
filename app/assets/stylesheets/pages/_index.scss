@@ -3,3 +3,10 @@
 @import "new";
 @import "home";
 @import "avemteam";
+
+.padding-general {
+  padding: 4%;
+  background-color: $fond;
+  height: 100%;
+  width: 100vw;
+}

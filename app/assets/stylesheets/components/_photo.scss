@@ -11,8 +11,8 @@
 .all-photos {
   overflow-y : scroll;
   -webkit-overflow-scrolling: touch;
-  height: 100%;
-  width: 320px;
+  height: calc(100vh - 300px);
+  width: 100%;
 }
 .avatar-bordered {
   width: 30px;
