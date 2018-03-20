@@ -2,6 +2,9 @@
   background-color: $fond;
   height: 150px;
 }
+.position-fixed{
+  position: fixed;
+}
 
 .red-banner {
   height: 9vh;
@@ -12,7 +15,6 @@
   justify-content: center;
   margin-bottom: 5%;
   background-color: $red;
-  position: fixed;
   .bienvenue {
     color: white;
     margin: 2% 0 0 0;
@@ -30,7 +32,6 @@
 }
 
 .pagetitle{
-  position: fixed;
   margin-top: 90px;
   width: 92%;
   height: 5vh;
