@@ -1,66 +1,17 @@
-.footer {
-  background-size: cover !important;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-end;
-  position:fixed !important;
-  width: 100%;
-}
-.height-lg {
-  height: 250px;
-  bottom: -50px;
-}
-.height-sn {
-  background-color: $bachapp;
-  bottom: 0px;
-}
-
-#add-picture {
-  width: 25px;
-  height: 25px;
-  position: absolute;
-  top: -22px;
-  right: -28px;
-}
 .spaceautour{
   height: 0;
   width: 0;
   margin-bottom: -100px;
 }
-.marginform{
-  margin-bottom: -26px;
+.Avem-signature{
+  text-align: right;
+  margin: 0;
+  a{
+    text-decoration: none;
+    color: black;
+  }
 }
-.action-footer-deux{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-}
-.action-footer {
-  width: 400px;
-  position: relative;
-}
-
-.margin-actionners-lg{
-  margin-bottom: 70px;
-  width: 550px;
-}
-.margin-actionners-sn{
-  margin-bottom: 10px;
-  margin-top: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 400px;
-}
-
-.hr{
-  border-top: 3px solid $red;
-  border-radius: 5px;
-  width: 90%;
-  position: absolute;
-  top: -26px;
-  align-items: center;
+.hr-footer{
+  border: 2px $red solid;
+  margin-top: 0;
 }
