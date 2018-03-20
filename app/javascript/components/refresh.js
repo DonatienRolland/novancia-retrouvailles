@@ -12,18 +12,43 @@ function Refresh() {
   if (photo1) {
     photo1.style.backgroundImage = `url("http://res.cloudinary.com/dbhmjj2co/image/upload/v1517426258/${randomImage1}.jpg")`
   }
-  if (photo2) {
-    photo2.style.backgroundImage = `url("http://res.cloudinary.com/dbhmjj2co/image/upload/v1517426258/${randomImage2}.jpg")`
-  }
-  if (photo3) {
-    photo3.style.backgroundImage = `url("http://res.cloudinary.com/dbhmjj2co/image/upload/v1517426258/${randomImage3}.jpg")`
-  }
-  if (photo4) {
-    photo4.style.backgroundImage = `url("http://res.cloudinary.com/dbhmjj2co/image/upload/v1517426258/${randomImage4}.jpg")`
-  }
+  setTimeout(function()
+  {
+    if (photo2) {
+      photo2.style.backgroundImage = `url("http://res.cloudinary.com/dbhmjj2co/image/upload/v1517426258/${randomImage1}.jpg")`
+    }
+  }, 10000);
+  setTimeout(function()
+  {
+    if (photo3) {
+      photo3.style.backgroundImage = `url("http://res.cloudinary.com/dbhmjj2co/image/upload/v1517426258/${randomImage1}.jpg")`
+    }
+  }, 30000);
+  setTimeout(function()
+  {
+    if (photo4) {
+      photo4.style.backgroundImage = `url("http://res.cloudinary.com/dbhmjj2co/image/upload/v1517426258/${randomImage1}.jpg")`
+    }
+  }, 20000);
 }
 setInterval(function() {
    Refresh();
 }, 10000)
 
 export { Refresh }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
