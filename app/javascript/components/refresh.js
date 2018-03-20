@@ -1,9 +1,29 @@
-
 function Refresh() {
-  var photo = document.getElementById('all-photos-lg')
-  console.log(photo)
-  var myVar = setInterval(photo, 3000);
-  console.log(myVar)
+  const photo1 = document.getElementById('photoLeftTop');
+  const photo2 = document.getElementById('photoLeftBottom');
+  const photo3 = document.getElementById('photoRightBottom');
+  const photo4 = document.getElementById('photoRightTop');
+  const images = ["gesam5npzcvlut75jmsy", "yjtvg9jfoagabaqa9rof", "uoait4anm4lxcdw95ipw", "ozvy2kienneshuvwynkr", "Qui_sommesnous_wypefc", "hgs6ogfboxxmao9h7cgd", "gnats7ztamxddutokxvd", "h3onlddermzjkth6xh73", "xk9sevgy4ygicz9ivmuu", "fczqdgxbdfk6zrgkdkgt"];
+  const randomImage1 = images[Math.floor(Math.random()*images.length)];
+  const randomImage2 = images[Math.floor(Math.random()*images.length)];
+  const randomImage3 = images[Math.floor(Math.random()*images.length)];
+  const randomImage4 = images[Math.floor(Math.random()*images.length)];
+
+  if (photo1) {
+    photo1.style.backgroundImage = `url("http://res.cloudinary.com/dbhmjj2co/image/upload/v1517426258/${randomImage1}.jpg")`
+  }
+  if (photo2) {
+    photo2.style.backgroundImage = `url("http://res.cloudinary.com/dbhmjj2co/image/upload/v1517426258/${randomImage2}.jpg")`
+  }
+  if (photo3) {
+    photo3.style.backgroundImage = `url("http://res.cloudinary.com/dbhmjj2co/image/upload/v1517426258/${randomImage3}.jpg")`
+  }
+  if (photo4) {
+    photo4.style.backgroundImage = `url("http://res.cloudinary.com/dbhmjj2co/image/upload/v1517426258/${randomImage4}.jpg")`
+  }
 }
+setInterval(function() {
+   Refresh();
+}, 10000)
 
 export { Refresh }
