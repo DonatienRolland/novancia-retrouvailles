@@ -1,51 +1,80 @@
 .display-lg {
   height: 100%;
   display: flex;
+  flex-direction: column;
+  img {
+    height: 40px;
+  }
 }
 
+// Nav bar lg
+.navlg {
+  display:flex;
+  justify-content: space-between;
+  width: 90%;
+  height: 110px;
+  margin-bottom: 2%;
+  img {
+    height: 93px;
+  }
+}
+
+// Logo avem haut a droite
+#avem-lg-top-right {
+  position: absolute;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  right: -79px;
+  top: 85px;
+}
+
+
 .all-photos-lg{
-  height: 75%;
+  height: 100%;
   display: flex;
-  margin-top: 8%;
+  width: 100%;
 }
 
 .taillePhotoLeft {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.margin-photo {
   margin: 10px;
 }
+
 // Right Part
 #photoLeftPart {
-  flex: 0 0 50%;
+  flex: 0 0 60%;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
-  padding-bottom: 100px;
-  padding-left: 100px;
+  margin-bottom: 10%;
+  padding-left: 15%;
+  position: relative;
+  width: 90%;
 }
 
 // Left Part
 
 #photoRightPart {
-  flex: 0 0 50%;
-  display: flex;
-  flex-direction: column-reverse;
-  padding-right: 100px;
-  // padding-top: 40%;
+  flex: 0 0 40%;
   position: relative;
+  height: 75%;
+  margin-top: 10%;
 }
 
-#currentImage {
-  max-width: 100%;
-}
 
 #whiteLive{
   position: absolute;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 2px;
   bottom: 4px;
-  right: 104px;
+  right: 4px;
   z-index: 1;
 }
 #blackLive {
