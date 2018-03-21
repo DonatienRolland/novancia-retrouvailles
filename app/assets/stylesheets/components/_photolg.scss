@@ -1,5 +1,6 @@
 .display-lg {
   height: 100%;
+
   display: flex;
 }
 
@@ -7,6 +8,7 @@
   height: 75%;
   display: flex;
   margin-top: 8%;
+  width: 100%;
 }
 
 .taillePhotoLeft {
@@ -29,23 +31,18 @@
 
 #photoRightPart {
   flex: 0 0 50%;
-  display: flex;
-  flex-direction: column-reverse;
-  padding-right: 100px;
-  // padding-top: 40%;
   position: relative;
+  height: 80%;
+  margin-top: 18%;
 }
 
-#currentImage {
-  max-width: 100%;
-}
 
 #whiteLive{
   position: absolute;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 2px;
   bottom: 4px;
-  right: 104px;
+  right: 4px;
   z-index: 1;
 }
 #blackLive {

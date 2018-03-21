@@ -1,5 +1,5 @@
 
-  <div id="photoRightPart">
+  <div id="photoRightPart" class="taillePhotoLeft" style="background-image: url('<%= cl_image_path @random_image.photo, crop: :fill %>')">
     <div class="actuellement">
       <div class="redPart">
         <div class="actu redbox-background"><h1>Actuel-</h1></div>
@@ -16,6 +16,4 @@
         <div id="fluxLive">flux live</div>
       </div>
     </div>
-    <%= cl_image_tag @random_image.photo, id:"currentImage", :crop=>"scale", :gravity=>"face" %>
   </div>
-
