@@ -7,6 +7,13 @@
 .padding-general {
   padding: 4%;
   background-color: $fond;
-  height: 100%;
+  // height: 100%;
+  height: 100vh;
   width: 100vw;
+}
+#load {
+  height: 100%;
+}
+#contents {
+  height: 100%;
 }

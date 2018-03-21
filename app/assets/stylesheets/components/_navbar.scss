@@ -3,31 +3,6 @@
   height: 150px;
 }
 
-.red-banner {
-  height: 9vh;
-  width: 92%;
-  padding: 0 3%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 5%;
-  background-color: $red;
-  position: fixed;
-  .bienvenue {
-    color: white;
-    margin: 2% 0 0 0;
-  }
-  .red-banner-hr{
-    color: white;
-    margin: 0;
-    border: 1px white solid;
-    width: 50%;
-  }
-  .soiree{
-    color: white;
-    margin: 2% 0;
-  }
-}
 
 .pagetitle{
   position: fixed;
