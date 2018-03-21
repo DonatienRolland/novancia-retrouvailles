@@ -1,7 +1,16 @@
 .spaceautour{
+  visibility: hidden;
   height: 0;
   width: 0;
   margin-bottom: -100px;
+}
+#add-picture{
+  position: absolute;
+}
+
+.footer{
+  position: fixed;
+  width: 92%;
 }
 .Avem-signature{
   text-align: right;
@@ -14,4 +23,14 @@
 .hr-footer{
   border: 2px $red solid;
   margin-top: 0;
+}
+.images-footer{
+  display: flex;
+  justify-content: space-between;
+  .text-desc-xs{
+    height: 50px;
+  }
+  .camera{
+    height: 50px;
+  }
 }
