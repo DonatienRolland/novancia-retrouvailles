@@ -1,6 +1,8 @@
-.hidden-xs {
+.display-lg {
   height: 100%;
+  display: flex;
 }
+
 .all-photos-lg{
   height: 75%;
   display: flex;
@@ -13,6 +15,7 @@
   background-size: cover;
   margin: 10px;
 }
+// Right Part
 #photoLeftPart {
   flex: 0 0 50%;
   display: grid;
@@ -22,11 +25,14 @@
   padding-left: 100px;
 }
 
+// Left Part
+
 #photoRightPart {
   flex: 0 0 50%;
   display: flex;
   flex-direction: column-reverse;
   padding-right: 100px;
+  // padding-top: 40%;
   position: relative;
 }
 
