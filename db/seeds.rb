@@ -9,19 +9,20 @@ dorian = User.create!(first_name: "dorian", email: "dorian.gentine@mail.novancia
 
 puts "Users are created"
 
-
+pitcure1 = Picture.new
+pitcure2 = Picture.new
 
 pitcure1.remote_photo_url = "http://res.cloudinary.com/dbhmjj2co/image/upload/v1517609152/c5uq8bdqhewe43cemuww.jpg"
 pitcure2.remote_photo_url = "http://res.cloudinary.com/dbhmjj2co/image/upload/v1517610897/relq9mpperpivhx5vncc.jpg"
 
-
+puts "Pitcures are created"
 pitcure1.user = donatien
 pitcure2.user = erwan
 
 pitcure1.save!
 pitcure2.save!
 
-puts "Pictures are created"
+puts "Pictures are linked with user"
 
 erwan.up_votes pitcure1
 donatien.up_votes pitcure1
