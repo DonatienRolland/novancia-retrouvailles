@@ -5,9 +5,9 @@
   <hr class="hr-footer">
   </div>
   <% if user_signed_in? %>
-    <div>
-      <img src="/assets/text-desc-xs.png" alt="Découvrez sur l'écran les photos pendant votre passage à Novancia et partagez vos souvenirs de cette soirée" style="height: 30px;">
-      <img src="/assets/icon_photo.png" alt="icone appareil photo" style="height: 30px; width: 38px;" class="camera">
+    <div class="images-footer">
+      <img src="/assets/text-desc-xs.png" alt="Découvrez sur l'écran les photos pendant votre passage à Novancia et partagez vos souvenirs de cette soirée" class="text-desc-xs">
+      <img src="/assets/icon_photo.png" alt="icone appareil photo" class="camera">
       <%= render 'shared/formpicture' %>
     </div>
   <% end %>
