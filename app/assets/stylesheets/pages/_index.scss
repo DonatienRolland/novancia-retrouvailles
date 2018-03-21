@@ -5,15 +5,24 @@
 @import "avemteam";
 
 .padding-general {
-  padding: 4%;
   background-color: $fond;
-  // height: 100%;
   height: 100vh;
   width: 100vw;
 }
-#load {
-  height: 100%;
+// #load {
+//   height: 100%;
+// }
+// #contents {
+//   height: 100%;
+// }
+
+@media screen and (max-width: 767px) {
+  .padding-general {
+    padding: 4%;
+  }
 }
-#contents {
-  height: 100%;
+@media screen and (min-width: 768px) {
+  .padding-general {
+    padding: 2% 4%;
+  }
 }
