@@ -1,6 +1,6 @@
 #header-nov{
   background-color: $fond;
-  height: 122px;
+  height: 137px;
 }
 
 .pagetitle{
@@ -32,6 +32,14 @@
     text-align: center;
     align-self: center;
   }
+}
+
+.connexion{
+  width: 75% !important;
+  height: 9vh;
+  margin-top: 0;
+  position: relative;
+  top: 0;
 }
 
 .redbox-background{
