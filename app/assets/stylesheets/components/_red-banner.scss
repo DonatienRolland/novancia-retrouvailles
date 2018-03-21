@@ -7,9 +7,19 @@
   flex-direction: column;
   justify-content: center;
   background-color: $red;
-  .bienvenue {
-    color: white;
-    margin: 2% 0 0 0;
+  .red-banner-premiere-ligne{
+    display: flex;
+    justify-content: space-between;
+    p {
+      color: white;
+      margin: 2% 0 0 0;
+    }
+    .red-banner-croix{
+      font-weight: 700 !important;
+    }
+    a{
+      margin-top: 2%;
+    }
   }
   .red-banner-hr{
     color: white;

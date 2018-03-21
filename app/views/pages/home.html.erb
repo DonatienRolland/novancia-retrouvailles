@@ -1,4 +1,8 @@
-<div class="banner-home" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= cl_image_path 'fond_uvrhtk', crop: :fill %>')">
+<div class="banner-home">
+  <div id="header-nov">
+    <%= render 'shared/redbanner' %>
+    <%= render 'shared/pagetitle' %>
+  </div>
   <div class="col-sm-offset-1 col-sm-6">
     <div class="home">
       <% if user_signed_in? %>

@@ -1,5 +1,10 @@
 <div class="red-banner">
-  <p class="bienvenue">Bienvenue à la</p>
+  <div class="red-banner-premiere-ligne">
+    <p class="bienvenue">Bienvenue à la</p>
+    <%= link_to destroy_user_session_path, method: :delete do %>
+      <p class="red-banner-croix">X</p>
+    <% end %>
+  </div>
   <hr class="red-banner-hr">
   <h2 class="soiree">SOIREE RETROUVAILLES</h2>
 </div>

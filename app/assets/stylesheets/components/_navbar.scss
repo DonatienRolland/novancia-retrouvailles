@@ -6,7 +6,8 @@
 .pagetitle{
   margin-top: 90px;
   width: 92%;
-  height: 5vh;
+  height: 7vh;
+  display: flex;
   div{
     width: 96%;
     height: 85%;
@@ -28,6 +29,7 @@
     z-index: 2;
     width: 100%;
     text-align: center;
+    align-self: center;
   }
 }
 

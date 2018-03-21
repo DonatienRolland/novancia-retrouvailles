@@ -1,3 +1,7 @@
+.tab-content{
+  display: flex;
+  justify-content: center;
+}
 .photo {
   max-height: 240px;
   max-width: 100%;
@@ -6,12 +10,11 @@
   display: flex;
   flex-direction: column;
   width: 320px;
-  margin: auto;
 }
 .all-photos {
   overflow-y : scroll;
   -webkit-overflow-scrolling: touch;
-  height: calc(100vh - 5vh - 218px);
+  height: calc(100vh - 5vh - 210px);
   width: 100%;
 }
 .avatar-bordered {
@@ -21,13 +24,15 @@
   box-shadow: 0 1px 2px rgba(0,0,0,0.2);
   margin-bottom: 5px;
   margin-left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .gris-avatar{
   background-color: #c1d5e0;
   p {
     color: white;
-    margin-top: 2px;
-    margin-left: 2px;
+    margin: 0 !important;
   }
 }
 .name-vote {
@@ -52,10 +57,11 @@
 
 .user-posted {
   display: flex;
-  flex-direction: row;
   justify-content: flex-end;
+  align-items: center;
   p {
     font-weight: lighter;
+    margin-bottom: 5px;
   }
 }
 .fa {
