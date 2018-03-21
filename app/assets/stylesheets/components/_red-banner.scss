@@ -48,3 +48,25 @@
 
   }
 }
+
+
+// To deleted
+
+.nvgt{
+    position:absolute;
+    top: 120px;
+    height: 50px;
+    width: 30px;
+    opacity: 0.6;
+}
+.nvgt:hover{
+    opacity: 0.9;
+}
+#prev{
+    background: #000;
+    left: 0px;
+}
+#next{
+    background: #000;
+    right: 0px;
+}
