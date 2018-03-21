@@ -1,43 +1,46 @@
 
-<div id="load">
-  <div id="contents">
+<!-- <div id="load">
+  <div id="contents"> -->
+    <div class="hidden-lg  hidden-sm hidden-md">
+      <div id="header-nov">
+        <%= render 'shared/redbanner' %>
+        <%= render 'shared/pagetitle' %>
+      </div>
+      <!-- small screen -->
+      <div class="all-photos">
+        <div class="tab-content">
+          <div class="tab-pane active" id="actu" role="tabpanel" aria-labelledby="pills-home-tab">
+            <% @pictures.each do |picture| %>
+              <%= render 'pictures/photo', picture: picture %>
+            <% end %>
+            <!-- <div class="espace"><h1>Kiss</h1></div> -->
+          </div>
+          <div class="tab-pane" id="top" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <% @picturesup.each do |picture| %>
+              <%= render 'pictures/photo', picture: picture %>
+            <% end %>
+            <!-- <div class="espace"><h1>Kiss</h1></div> -->
+          </div>
+          <div class="espace"></div>
+        </div>
+      </div>
+      <%= render 'shared/footer' %>
+    </div>
 
-    <div id="header-nov">
+      <!-- large screen -->
+    <div class="hidden-xs">
       <%= render 'shared/redbanner' %>
-      <%= render 'shared/pagetitle' %>
-    </div>
-    <!-- small screen -->
-    <div class="all-photos">
-      <div class="tab-content">
-        <div class="tab-pane active" id="actu" role="tabpanel" aria-labelledby="pills-home-tab">
-          <% @pictures.each do |picture| %>
-            <%= render 'pictures/photo', picture: picture %>
-          <% end %>
-          <!-- <div class="espace"><h1>Kiss</h1></div> -->
+        <div id="all-photos-lg" class="all-photos-lg">
+
+
+          <%= render 'shared/photos-right' %>
+
+          <%= render 'shared/photos-left' %>
+
+
         </div>
-        <div class="tab-pane" id="top" role="tabpanel" aria-labelledby="pills-profile-tab">
-          <% @picturesup.each do |picture| %>
-            <%= render 'pictures/photo', picture: picture %>
-          <% end %>
-          <!-- <div class="espace"><h1>Kiss</h1></div> -->
-        </div>
-        <div class="espace"></div>
       </div>
     </div>
 
-    <!-- large screen -->
-    <div class="banner-lg hidden-xs" style="background-image: url('<%= cl_image_path 'background_ordinateur_r7np6e', crop: :fill %>')">
-      <div id="all-photos-lg" class="all-photos-lg">
-
-
-        <%= render 'shared/photos-right' %>
-
-        <%= render 'shared/photos-left' %>
-
-
-      </div>
-    </div>
-    <%= render 'shared/footer' %>
-
-  </div>
-</div>
+<!--   </div>
+</div> -->

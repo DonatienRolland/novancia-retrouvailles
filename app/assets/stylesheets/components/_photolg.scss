@@ -1,8 +1,11 @@
-.all-photos-lg{
+.hidden-xs {
   height: 100%;
-  display: flex;
 }
-
+.all-photos-lg{
+  height: 75%;
+  display: flex;
+  margin-top: 8%;
+}
 
 .taillePhotoLeft {
   background-repeat: no-repeat;
@@ -35,30 +38,23 @@
   position: absolute;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 2px;
-  height: 45px;
-  width: 82px;
-  bottom: 0;
-  right: 100px;
+  bottom: 4px;
+  right: 104px;
   z-index: 1;
 }
 #blackLive {
   border: solid;
-  height: 86%;
-  width: 86%;
-  margin: auto;
-  margin-top: 7%;
+  width: 92%;
+  margin: 4% auto;
   border-radius: 2px;
   display: flex;
+  align-items: center;
 }
 #voyantLive {
   border-radius: 50%;
   width: 15px;
   height: 15px;
-  background-color: red;
-  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-  animation-name: example;
-  animation-duration: 4s;
+  margin: 8px;
 }
 
   @-webkit-keyframes argh-my-eyes {
@@ -86,4 +82,8 @@
   -webkit-animation: argh-my-eyes 1s infinite;
   -moz-animation:    argh-my-eyes 1s infinite;
   animation:         argh-my-eyes 1s infinite;
+}
+#fluxLive {
+  width: 90px;
+  margin: 8px;
 }
