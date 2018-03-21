@@ -2,10 +2,11 @@
   background-color: $fond;
   height: 150px;
 }
-
+.position-fixed{
+  position: fixed;
+}
 
 .pagetitle{
-  position: fixed;
   margin-top: 90px;
   width: 92%;
   height: 5vh;
