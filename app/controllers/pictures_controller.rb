@@ -53,6 +53,12 @@ class PicturesController < ApplicationController
     end
   end
 
+  def last_picture
+    render json: {
+      url: Picture.last.photo.url
+    }.to_json
+  end
+
 
   private
 

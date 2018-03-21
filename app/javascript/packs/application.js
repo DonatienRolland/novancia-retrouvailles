@@ -7,15 +7,16 @@
 // To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
 // layout file, like app/views/layouts/application.html.erb
 
-// import swal from '../components/sweetalert';
+
 import "bootstrap";
 import "../components/camera";
 import "../components/profil";
 import { likeUnlike } from "../components/like";
-import "../components/dropdown";
-import "../components/tab";
-import "../components/lightbox";
-import "../components/loading";
+// import "../components/dropdown";
+// import "../components/tab";
+// import "../components/lightbox";
+// import "../components/loading";
+import "../components/fetchPicture";
 import { Refresh } from "../components/refresh";
 
 Refresh();
