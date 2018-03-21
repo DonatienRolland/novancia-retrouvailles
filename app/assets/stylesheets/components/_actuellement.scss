@@ -1,0 +1,29 @@
+.lement {
+  width: 140px;
+  height: 44px;
+}
+.actu {
+  width: 120px;
+  height: 44px;
+}
+.actuellement {
+  .redbox-background {
+    padding: 5px;
+  }
+}
+.orangePart {
+  position: absolute;
+  top: -7px;
+  left: 7px;
+}
+
+.actuellement {
+  // position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.redPart {
+  position: absolute;
+  z-index: 1;
+}
