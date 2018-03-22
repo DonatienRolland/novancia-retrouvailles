@@ -1,12 +1,16 @@
 .red-banner {
   // height: 9vh;
   // max-width: 414px;
-  width: 92%;
+  width: 100%;
   padding: 0 3%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: $red;
+  .bienvenue{
+    color: white;
+    margin: 2% 0 0 0;
+  }
   .red-banner-premiere-ligne{
     display: flex;
     justify-content: space-between;
@@ -34,8 +38,11 @@
 }
 
 @media screen and (max-width: 767px) {
-  .red-banner {
+  .position-fixed {
     position: fixed;
+    width: 92%;
+  }
+  .red-banner{
     margin-bottom: 5%;
   }
 }
