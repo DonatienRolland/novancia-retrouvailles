@@ -12,7 +12,6 @@
   display:flex;
   justify-content: space-between;
   width: 90%;
-  height: 110px;
   margin-bottom: 2%;
   img {
     height: 93px;
@@ -36,6 +35,7 @@
   height: 100%;
   display: flex;
   width: 100%;
+  position: relative;
 }
 
 .taillePhotoLeft {
@@ -122,3 +122,19 @@
   width: 90px;
   margin: 8px;
 }
+
+#descLg {
+  position: absolute;
+  bottom: 2%;
+  right: calc(33% - 0px);
+  height: 60px;
+}
+
+
+
+
+
+
+
+
+
