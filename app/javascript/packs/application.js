@@ -16,8 +16,9 @@ import { likeUnlike } from "../components/like";
 // import "../components/tab";
 // import "../components/lightbox";
 // import "../components/loading";
-import "../components/fetchPicture";
+import { RefreshLeft } from "../components/fetchPicture";
 import { Refresh } from "../components/refresh";
 
 Refresh();
+RefreshLeft();
 likeUnlike();
