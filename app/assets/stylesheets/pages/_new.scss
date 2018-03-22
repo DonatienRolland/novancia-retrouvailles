@@ -44,6 +44,9 @@
 
 .rotation-90-gauche{
   transform: rotate(-90deg);
+  position: absolute;
+  bottom: calc(80px - 10%);
+  right: calc(-80px - 4%);
 }
 .footer-connexion{
   width: 100%;
