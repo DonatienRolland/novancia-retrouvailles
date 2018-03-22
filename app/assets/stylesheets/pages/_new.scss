@@ -8,6 +8,21 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.mise-en-page-connexion{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 700px;
+}
+
+
+.formulaire-connexion{
+  max-width: 800px;
+
+}
+
 .links-to-connect{
   align-self: flex-end;
 }
@@ -30,16 +45,20 @@
 .rotation-90-gauche{
   transform: rotate(-90deg);
 }
-.placement-illustration-logo{
-  right: -79px;
-  bottom: 80px;
-  position: fixed;
-  height: 40px;
-}
-.text-desc-xs-connexion{
-  height: 50px;
-  position: fixed;
-  bottom: 15px;
+.footer-connexion{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+  margin-bottom: 0%;
+  .placement-illustration-logo{
+    height: 40px;
+  }
+  .text-desc-xs-connexion{
+    height: 50px;
+    align-self: flex-end;
+  }
 }
 
 .ecarter{
