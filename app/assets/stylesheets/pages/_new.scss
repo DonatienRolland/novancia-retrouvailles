@@ -54,6 +54,9 @@
   margin-bottom: 0%;
   .placement-illustration-logo{
     height: 40px;
+    position: absolute;
+    bottom: calc(145px - 10%);
+    right: calc(-65px - 4%);
   }
   .text-desc-xs-connexion{
     height: 50px;

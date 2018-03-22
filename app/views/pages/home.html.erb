@@ -1,26 +1,29 @@
 <div class="banner-home">
-  <div id="header-nov">
-    <%= render 'shared/redbanner' %>
-    <%= render 'shared/pagetitle' %>
+  <%= render 'shared/redbanner-flex' %>
+
+  <div class="pagetitle pagetitle-home">
+    <h1 class="titre-page">Bienvenue</h1>
+    <div class="redbox redbox-background"></div>
+    <div class="orangebox orangebox-background"></div>
   </div>
-  <div class="col-sm-offset-1 col-sm-6">
-    <div class="home">
-      <% if user_signed_in? %>
-        <%= link_to "Soirée Retrouvailles", pictures_path, class:"home-link center-link" %>
-      <% else %>
-          <h2>Chers Novanciens,</h2>
-          <p><strong>Ce site a été réalisé uniquement pour vous ! </strong></p>
-          <p>Partagez vos souvenirs depuis toutes ces années à Novancia, partagez votre soirée de retrouvaille, pour qu'on en garde tous des moments magiques et inoubliables !
-          </p>
-          <p>
-            Ce site est une plateforme de partage de photos afin que l'on puisse toutes les retrouver dans l'avenir.
-          </p>
-          <p>
-          « L’avenir est une porte, le passé en est la clé » de Victor Hugo
-          </p>
-            <%= link_to t(".sign_in", default: "Se connecter"), new_user_session_path, class: "home-link" %>
-      <% end %>
-    </div>
+
+  <div class="home">
+    <% if user_signed_in? %>
+      <%= link_to "Soirée Retrouvailles", pictures_path, class:"home-link center-link" %>
+    <% else %>
+        <h2>Chers Novanciens,</h2>
+        <p><strong>Ce site a été réalisé uniquement pour vous ! </strong></p>
+        <p>Partagez vos souvenirs depuis toutes ces années à Novancia, partagez votre soirée de retrouvaille, pour qu'on en garde tous des moments magiques et inoubliables !
+        </p>
+        <p>
+          Ce site est une plateforme de partage de photos afin que l'on puisse toutes les retrouver dans l'avenir.
+        </p>
+        <p>
+        « L’avenir est une porte, le passé en est la clé » - Victor Hugo
+        </p>
+    <% end %>
   </div>
+
+  <%= link_to t(".sign_in", default: "Se connecter"), new_user_session_path, class: "home-link btn btn-home" %>
 </div>
 

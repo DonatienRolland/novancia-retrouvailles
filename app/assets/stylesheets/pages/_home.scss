@@ -1,0 +1,16 @@
+.banner-home{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 767px;
+}
+.home p{
+  text-align: justify;
+}
+.btn-home{
+  width: 60%;
+  align-self: center;
+  margin-bottom: 25%;
+  padding: 4% 0;
+}
