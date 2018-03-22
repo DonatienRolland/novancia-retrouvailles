@@ -44,9 +44,6 @@
 
 .rotation-90-gauche{
   transform: rotate(-90deg);
-  position: absolute;
-  bottom: calc(80px - 10%);
-  right: calc(-80px - 4%);
 }
 .footer-connexion{
   width: 100%;
@@ -57,6 +54,9 @@
   margin-bottom: 0%;
   .placement-illustration-logo{
     height: 40px;
+    position: absolute;
+    bottom: calc(145px - 10%);
+    right: calc(-65px - 4%);
   }
   .text-desc-xs-connexion{
     height: 50px;

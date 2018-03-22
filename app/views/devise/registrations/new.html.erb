@@ -1,7 +1,12 @@
-<div id="header-nov">
-  <%= render 'shared/redbanner-flex' %>
-  <%= render 'shared/pagetitle' %>
+
+<%= render 'shared/redbanner-flex' %>
+
+<div class="pagetitle connexion">
+  <h1 class="titre-page">Inscription</h1>
+  <div class="redbox redbox-background"></div>
+  <div class="orangebox orangebox-background"></div>
 </div>
+
 
 <div class="home widthmax sign-up">
 
@@ -11,7 +16,7 @@
     <div class="form-inputs">
       <%= f.input :first_name, placeholder:"Prénom", label: false %>
       <%= f.input :email, required: true, autofocus: true , placeholder:"Adresse mail", label: false %>
-      <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length), placeholder:"Mot de passe", label: false %>
+      <%= f.input :password, required: true, hint: ("#{@minimum_password_length} caractères minimum" if @minimum_password_length), placeholder:"Mot de passe", label: false %>
       <%= f.input :password_confirmation, required: true, placeholder:"Confirmation mot de passe", label: false %>
 
       <!-- <div class="add-photo-profil">
@@ -32,4 +37,6 @@
   <% end %>
 </div>
 
-<img src="/assets/Avem_illustration.png" alt="logo Avem" class="rotation-90-gauche placement-illustration-logo">
+<div class="footer-connexion">
+  <img src="/assets/Avem_illustration.png" alt="logo Avem" class="rotation-90-gauche placement-illustration-logo">
+</div>
