@@ -33,11 +33,21 @@
 .placement-illustration-logo{
   right: -79px;
   bottom: 80px;
-  position: absolute;
+  position: fixed;
   height: 40px;
 }
 .text-desc-xs-connexion{
   height: 50px;
-  position: absolute;
+  position: fixed;
   bottom: 15px;
+}
+
+.ecarter{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  .color-links p{
+    margin: 0;
+  }
 }
