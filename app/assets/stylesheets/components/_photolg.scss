@@ -1,7 +1,9 @@
 .display-lg {
   height: 100%;
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  position: relative;
+  // display: flex;
+  // flex-direction: column;
   img {
     height: 40px;
   }
@@ -9,6 +11,8 @@
 
 // Nav bar lg
 .navlg {
+  position: absolute;
+  top: 0;
   display:flex;
   justify-content: space-between;
   width: 90%;
@@ -26,17 +30,17 @@
   -o-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
-  right: -79px;
+  right:calc(-85px - 4%);
   top: 85px;
 }
 
 
-.all-photos-lg{
-  height: 100%;
-  display: flex;
-  width: 100%;
-  position: relative;
-}
+// .all-photos-lg{
+//   height: 100%;
+//   display: flex;
+//   width: 100%;
+//   position: relative;
+// }
 
 .taillePhotoLeft {
   background-repeat: no-repeat;
@@ -49,12 +53,15 @@
 
 // Right Part
 #photoLeftPart {
-  flex: 0 0 60%;
+  // flex: 0 0 60%;
+  position: absolute !important;
+  bottom: calc(-10px + 95px);
+  right: 0;
+  height: 65%;
+  width: 47% !important;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
-  margin-bottom: 10%;
-  padding-left: 15%;
   position: relative;
   width: 90%;
 }
@@ -62,9 +69,13 @@
 // Left Part
 
 #photoRightPart {
-  flex: 0 0 40%;
+  // flex: 0 0 40%;
+  position: absolute !important;
+  bottom: 0;
+  left: 0;
   position: relative;
-  height: 75%;
+  height: 65%;
+  width: 40%;
   margin-top: 10%;
 }
 
@@ -125,9 +136,9 @@
 
 #descLg {
   position: absolute;
-  bottom: 2%;
-  right: calc(33% - 0px);
-  height: 60px;
+  bottom: 0;
+  right: calc(28% - 0px);
+  height: 70px;
 }
 
 
