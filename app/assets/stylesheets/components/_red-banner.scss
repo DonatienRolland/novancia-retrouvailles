@@ -43,16 +43,16 @@
 .squareOrange {
   position: absolute;
   background-color: $orange;
-  height: 25px;
-  width: 25px;
+  height: 30px;
+  width: 30px;
 }
 #positionOrangeSquare1 {
   top: 0;
   right: 0;
 }
 #positionOrangeSquare2 {
-  top: 25px;
-  right: -25px;
+  top: 30px;
+  right: -30px;
 }
 
 @media screen and (max-width: 767px) {
