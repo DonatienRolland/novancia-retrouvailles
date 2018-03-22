@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 
   get 'sitemap.xml', to: 'pages#sitemap'
   get 'last-picture', to: 'pictures#last_picture', as: 'last_picture'
+  get 'actu-picture', to: 'pages#actu_picture', as: 'actu_picture'
 
   get 'avemteam', to: 'pages#avemteam'
   get 'trucdemaladeAVEMCREATION', to: 'pages#trucdemaladeAVEMCREATION'
