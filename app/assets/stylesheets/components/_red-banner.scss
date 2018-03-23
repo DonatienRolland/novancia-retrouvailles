@@ -79,4 +79,18 @@
   }
 }
 
+.doublescreen {
+  .red-banner {
+    width: 45% !important;
+    // padding: 10px 0;
+    margin-left: 0;
+    // margin: 0 5% !important;
+    h2 {
+    font-size: 29pt !important;
+}
+  }
+  .navlg {
+    width: calc(100% - 50px) !important;
+  }
+}
 

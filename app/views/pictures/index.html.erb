@@ -29,7 +29,9 @@
 
       <!-- large screen -->
     <div class="hidden-xs display-lg">
-      <img src="/assets/Avem_illustration.png" alt="" id="avem-lg-top-right">
+      <%= link_to doublescreen_path do %>
+        <img src="/assets/Avem_illustration.png" alt="" id="avem-lg-top-right">
+      <% end %>
       <div class="navlg">
         <img src="/assets/date-2803.png" alt="">
         <%= render 'shared/redbanner-flex' %>
