@@ -1,7 +1,8 @@
 function RefreshLeft() {
 
   const photoLeft = document.getElementById("photoRightPart");
-  var url = 'https://novancia-retrouvailles.herokuapp.com/last-picture'
+  var url = 'http://localhost:3000/last-picture'
+  // var url = 'https://novancia-retrouvailles.herokuapp.com/last-picture'
 
   fetch(url, {
     credentials: 'same-origin'
