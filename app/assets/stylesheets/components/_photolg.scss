@@ -33,7 +33,16 @@
   right:calc(-85px - 4%);
   top: 85px;
 }
-
+#avem-lg-bottom-left {
+  position: absolute;
+  bottom: -3%;
+  left: 0;
+}
+#avem-lg-bottom-right {
+  position: absolute;
+  bottom: -3%;
+  right: 30%;
+}
 
 // .all-photos-lg{
 //   height: 100%;
@@ -78,7 +87,11 @@
   width: 40%;
   margin-top: 10%;
 }
-
+.doublescreen {
+  #photoRightPart {
+    bottom: 25px;
+  }
+}
 
 #whiteLive{
   position: absolute;
