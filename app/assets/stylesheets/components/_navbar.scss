@@ -1,11 +1,11 @@
 #header-nov{
   background-color: $fond;
-  height: 137px;
+  height: calc(3vw + 98px + 7vh);
   max-width: 1000px;
 }
 
 .pagetitle{
-  margin-top: 98px;
+  margin-top: calc(3vw + 98px);
   width: 92%;
   max-width: 767px;
   height: 7vh;
@@ -33,6 +33,7 @@
     width: 100%;
     text-align: center;
     align-self: center;
+    font-size: 4vh !important;
   }
 }
 
