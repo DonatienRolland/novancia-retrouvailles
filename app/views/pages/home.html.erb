@@ -16,14 +16,8 @@
       <%= link_to "Soirée Retrouvailles", pictures_path, class:"home-link center-link btn btn-home" %>
     <% else %>
         <h2>Chers Novanciens,</h2>
-        <p><strong>Ce site a été réalisé uniquement pour vous ! </strong></p>
-        <p>Partagez vos souvenirs depuis toutes ces années à Novancia, partagez votre soirée de retrouvaille, pour qu'on en garde tous des moments magiques et inoubliables !
-        </p>
         <p>
-          Ce site est une plateforme de partage de photos afin que l'on puisse toutes les retrouver dans l'avenir.
-        </p>
-        <p>
-        « L’avenir est une porte, le passé en est la clé » - Victor Hugo
+          <strong>Ce site a été réalisé uniquement pour vous ! </strong><br><br>Partagez vos souvenirs depuis toutes ces années à Novancia, partagez votre soirée de retrouvaille, pour qu'on en garde tous des moments magiques et inoubliables !<br><br>Ce site est une plateforme de partage de photos afin que l'on puisse toutes les retrouver dans l'avenir.<br><br>« L’avenir est une porte, le passé en est la clé » - Victor Hugo
         </p>
         <%= link_to t(".sign_in", default: "Se connecter"), new_user_session_path, class: "home-link btn btn-home" %>
     <% end %>
