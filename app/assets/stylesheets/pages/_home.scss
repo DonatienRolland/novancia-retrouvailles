@@ -6,12 +6,20 @@
   max-width: 767px;
   margin: auto;
 }
-.home p{
+.home{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: calc(3vw + 50px);
+  p{
   text-align: justify;
+  }
 }
+
 .btn-home{
   width: 60%;
   align-self: center;
   margin-bottom: 25%;
+  margin-top: 15%;
   padding: 4% 0;
 }

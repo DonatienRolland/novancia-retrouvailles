@@ -1,18 +1,17 @@
 <div class="mise-en-page-connexion">
+
   <div class="red-banner no-margin redPosition">
     <p class="bienvenue">Bienvenue à la</p>
     <hr class="red-banner-hr">
     <h2 class="soiree">SOIREE RETROUVAILLES</h2>
   </div>
 
-  <div class="pagetitle connexion">
-    <h1 class="titre-page">Inscription</h1>
-    <div class="redbox redbox-background"></div>
-    <div class="orangebox orangebox-background"></div>
-  </div>
-
-
-  <div class="home widthmax sign-up">
+  <div class="formulaire-connexion">
+    <div class="pagetitle connexion">
+      <h1 class="titre-page">Inscription</h1>
+      <div class="redbox redbox-background"></div>
+      <div class="orangebox orangebox-background"></div>
+    </div>
 
     <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
       <%= f.error_notification %>
