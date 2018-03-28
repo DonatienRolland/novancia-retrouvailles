@@ -2,7 +2,7 @@ function RefreshLeft() {
 
   const photoLeft = document.getElementById("photoRightPart");
   // var url = 'http://localhost:3000/last-picture'
-  var url = 'www.novapp.live/last-picture'
+  var url = '/last-picture'
 
   fetch(url, {
     credentials: 'same-origin'
