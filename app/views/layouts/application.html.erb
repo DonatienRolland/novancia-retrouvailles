@@ -13,6 +13,9 @@
     <%= stylesheet_link_tag 'application', media: 'all' %>
   </head>
   <body>
+    <% if user_signed_in? %>
+      <div id="user-signed-in"></div>
+    <% end %>
     <div class="padding-general">
         <%= yield %>
       <%= javascript_include_tag 'application' %>
