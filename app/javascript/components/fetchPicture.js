@@ -7,7 +7,6 @@ function RefreshLeft() {
     fetch(url, {
       credentials: 'same-origin'
     })
-
     .then(response =>
         response.json().then((data) => {
           const dataUrl = data.url

@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   root to: 'pages#home'
-  get 'last-picture', to: 'pictures#last_picture', as: 'last_picture'
   devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   resources :pictures do
@@ -11,6 +10,7 @@ Rails.application.routes.draw do
   end
 
   get 'sitemap.xml', to: 'pages#sitemapnovapp', as: 'sitemap'
+  get 'last-picture', to: 'pictures#last_picture', as: 'last_picture'
 
   get 'doublescreen', to: 'pages#doublescreen', as: 'doublescreen'
 
