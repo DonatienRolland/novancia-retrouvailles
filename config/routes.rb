@@ -12,8 +12,6 @@ Rails.application.routes.draw do
   get 'sitemap.xml', to: 'pages#sitemapnovapp', as: 'sitemap'
   get 'last-picture', to: 'pictures#last_picture', as: 'last_picture'
 
-  get 'list_id', to: 'pages#list_id', as: 'list_id'
-
   get 'doublescreen', to: 'pages#doublescreen', as: 'doublescreen'
 
   get 'avemteam', to: 'pages#avemteam'
