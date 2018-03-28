@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   end
 
   get 'sitemap.xml', to: 'pages#sitemapnovapp', as: 'sitemap'
-  get 'last-picture', to: 'pictures#last_picture', as: 'last_picture'
+  get 'last_picture', to: 'pictures#last_picture', as: 'last_picture'
 
   get 'doublescreen', to: 'pages#doublescreen', as: 'doublescreen'
 
