@@ -14,4 +14,7 @@ class PhotoUploader < CarrierWave::Uploader::Base
       width: 150, height: 150, crop: :thumb, gravity: :face
   end
 
+
+
+
 end

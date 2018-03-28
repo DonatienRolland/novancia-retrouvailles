@@ -16,9 +16,11 @@ import { likeUnlike } from "../components/like";
 // import "../components/tab";
 // import "../components/lightbox";
 // import "../components/loading";
+import { idCloudinary } from "../components/idCloudinary";
 import { RefreshLeft } from "../components/fetchPicture";
 import { Refresh } from "../components/refresh";
 
 Refresh();
 RefreshLeft();
+idCloudinary();
 likeUnlike();
