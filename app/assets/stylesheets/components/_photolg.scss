@@ -83,15 +83,34 @@
   bottom: 0;
   left: 0;
   position: relative;
-  height: 63vh;
-  width: 30vw;
+  height: 60vh;
+  width: 40vw;
   margin-top: 10%;
 }
+
+#photoRightPartImg {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  img {
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    display: block; /*for the img inside your div */
+    margin: 0 auto;
+  }
+}
+
+
+
 .doublescreen {
   #photoRightPart {
     bottom: 25px;
   }
 }
+
+
+
 
 #whiteLive{
   position: absolute;
