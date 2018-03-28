@@ -55,18 +55,6 @@ class PicturesController < ApplicationController
     }.to_json
   end
 
-  # def list_id
-  #   results = Cloudinary::Api.resources(type:"upload").20.times
-  #   resources = results["resources"]
-  #   @ids = resources.map {|res| res["public_id"]}
-
-  #   render json: {
-  #     ids: @ids
-  #   }.to_json
-
-  # end
-
-
 
   private
 
