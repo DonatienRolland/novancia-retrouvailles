@@ -13,7 +13,7 @@
     <%= stylesheet_link_tag 'application', media: 'all' %>
   </head>
   <body>
-    <% if current_user %>
+    <% if user_signed_in? %>
       <div id="user-signed-in"></div>
     <% end %>
     <div class="padding-general">
