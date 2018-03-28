@@ -98,6 +98,7 @@
     object-fit: cover;
     display: block; /*for the img inside your div */
     margin: 0 auto;
+    image-orientation: from-image;
   }
 }
 

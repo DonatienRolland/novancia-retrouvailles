@@ -5,6 +5,18 @@ class PhotoUploader < CarrierWave::Uploader::Base
 
   process convert: 'jpg'
 
+
+  # process :fix_exif_rotation
+
+  # def fix_exif_rotation
+  #   manipulate! do |img|
+  #     img.auto_orient!
+  #     img = yield(img) if block_given?
+  #     img
+  #   end
+  # end
+
+
   version :standard do
     resize_to_fit 800, 600
   end
