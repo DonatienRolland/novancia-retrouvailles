@@ -2,7 +2,7 @@ function RefreshLeft() {
 
   const photoLeft = document.getElementById("photoRightPartImg");
   // var url = 'http://localhost:3000/last-picture'
-  var url = '/last-picture'
+  var url = '/last_picture'
 
   fetch(url, {
     credentials: 'same-origin'
